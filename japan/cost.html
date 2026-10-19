@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>สรุปงบ Japan Winter Escape</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Mitr:wght@300;400;500;600&family=Mali:wght@400;500;600&display=swap">
+<style>
+/* ============ Winter Escape — editorial scrapbook ============ */
+:root{
+  --paper:#F3EDE4; --paper2:#FDFBF7; --band:#EAE1D3; --bandSoft:#F4EEE4;
+  --ink:#1C1A17; --inkSoft:#6E675E; --inkFaint:#9A9287;
+  --rule:#D7CCBA; --ruleSoft:#E8E0D2;
+  --ember:#A4584A; --pine:#4C6150; --gold:#B08A52; --frost:#8FA9BE;
+  --leadBg:#1C1A17; --leadFg:#F6F0E6;
+  --shadow:0 1px 2px rgba(28,26,23,.05), 0 10px 28px -14px rgba(28,26,23,.22);
+  color-scheme:light;
+  --disp:"Fredoka","Mitr",system-ui,sans-serif;
+  --script:"Mali","Mitr",cursive;
+  --body:"Mitr",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+/* single cream theme by design — no dark variant */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{width:100%;max-width:980px;margin:0 auto;
+  padding-left:max(20px,env(safe-area-inset-left,0px));
+  padding-right:max(20px,env(safe-area-inset-right,0px))}
+img{max-width:100%}
+a{color:var(--ember)}
+
+/* ---- icon strip ---- */
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.strip{display:flex;align-items:center;justify-content:center;gap:13px;margin:0 auto;padding:9px 0;
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);color:var(--inkSoft)}
+.strip svg{width:17px;height:17px;flex:none;opacity:.85}
+.strip .dot{width:3px;height:3px;border-radius:50%;background:var(--rule);flex:none}
+
+/* ---- masthead ---- */
+.mast{padding-block:40px 30px;text-align:center}
+.mast .rule{height:1px;background:var(--rule);margin:0 auto}
+.kick{font-family:var(--script);font-size:1.75rem;color:var(--ember);line-height:1;margin-bottom:8px}
+.mast h1{font-family:var(--disp);font-weight:400;letter-spacing:.02em;
+  font-size:clamp(2rem,9.5vw,4.4rem);line-height:1.04;margin:4px 0 10px;text-wrap:balance}
+.mast .th{font-size:.9rem;letter-spacing:.07em;color:var(--inkSoft);margin-bottom:4px}
+.mast .thb{font-family:var(--disp);font-size:1.1rem;letter-spacing:.2em;color:var(--inkSoft)}
+.covers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0 6px}
+.covers figure{margin:0;background:var(--paper2);padding:7px 7px 24px;box-shadow:var(--shadow);
+  border:1px solid var(--ruleSoft);transform:rotate(var(--rot,0deg))}
+.covers figure:nth-child(1){--rot:-1.1deg}
+.covers figure:nth-child(3){--rot:1.2deg}
+.covers img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}
+.covers figcaption{font-family:var(--script);font-size:1rem;color:var(--inkSoft);margin-top:5px;line-height:1}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:7px 10px;margin:22px 0 0}
+.fact{font-size:.8rem;color:var(--inkSoft);border:1px solid var(--rule);border-radius:999px;padding:4px 13px;background:var(--paper2)}
+.fact b{color:var(--ink);font-weight:600}
+.totals{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:24px 0 0;text-align:left}
+.tot{background:var(--paper2);border:1px solid var(--ruleSoft);padding:16px 18px;box-shadow:var(--shadow)}
+.tot.lead{background:var(--leadBg);color:var(--leadFg);border-color:var(--leadBg)}
+.tl{font-size:.74rem;letter-spacing:.02em;color:var(--inkSoft)}
+.tot.lead .tl,.tot.lead .ts{color:rgba(246,240,230,.72)}
+.tv{font-family:var(--disp);font-weight:500;font-size:2.25rem;line-height:1.1;margin:3px 0 2px;letter-spacing:.01em}
+.ts{font-size:.79rem;color:var(--inkSoft)}
+.switch{margin-top:22px;text-align:left;border:1px solid var(--rule);background:var(--paper2);padding:16px 18px}
+.switch .lbl{font-family:var(--disp);font-size:1.15rem;letter-spacing:.1em;color:var(--ember);margin-bottom:11px}
+.opts{display:grid;gap:9px}
+.opt{display:flex;gap:11px;align-items:flex-start;cursor:pointer;padding:11px 14px;border:1px solid var(--ruleSoft);background:var(--paper)}
+.opt input{margin:4px 0 0;accent-color:var(--pine);flex:none}
+.opt:has(input:checked){border-color:var(--pine);box-shadow:inset 0 0 0 1px var(--pine)}
+.on{display:block;font-weight:600;font-size:.95rem}
+.os{display:block;font-size:.8rem;color:var(--inkSoft);line-height:1.5}
+
+/* ---- nav ---- */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--paper);z-index:21}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;justify-content:center}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{flex:none;padding:11px 13px;font-size:.84rem;color:var(--inkSoft);text-decoration:none;white-space:nowrap;letter-spacing:.02em}
+nav a:hover{color:var(--ember)}
+
+/* ---- sections ---- */
+section{padding-block:46px 10px}
+section + section{border-top:1px solid var(--ruleSoft)}
+.shead{text-align:center;margin-bottom:26px}
+.shead .script{display:block;font-family:var(--script);font-size:2.2rem;line-height:1.1;color:var(--ember)}
+.shead h2{font-family:var(--disp);font-weight:400;font-size:1.5rem;letter-spacing:.02em;
+  margin:2px 0 6px;color:var(--ink)}
+.shead .sub{display:block;font-size:.84rem;color:var(--inkSoft)}
+.shead .amt{display:inline-block;margin-top:10px;font-family:var(--disp);font-size:1.5rem;color:var(--ember);letter-spacing:.03em}
+
+/* ---- tables ---- */
+.scroll{overflow-x:auto;background:var(--paper2);border:1px solid var(--ruleSoft);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;min-width:560px;font-size:.88rem}
+.sumtab{min-width:0}
+th{font-family:var(--disp);font-size:.82rem;letter-spacing:.02em;color:var(--inkSoft);
+  text-align:left;padding:13px 16px;border-bottom:1px solid var(--rule);font-weight:500;white-space:nowrap}
+td{padding:13px 16px;border-bottom:1px solid var(--ruleSoft);vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+.r{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tfoot td{border-top:1.5px solid var(--ink);border-bottom:0;background:var(--bandSoft);font-weight:600;
+  font-family:var(--disp);font-size:1.02rem;letter-spacing:.03em}
+.note-sm{display:block;font-size:.76rem;color:var(--inkSoft);line-height:1.5;margin-top:3px;white-space:normal}
+.free{color:var(--inkFaint)}
+.dmob{display:none}
+@media (max-width:620px){
+  .sumtab .dmob{display:block;font-size:.76rem;color:var(--inkSoft);line-height:1.5;margin-top:3px;font-weight:400}
+  .sumtab th:nth-child(2),.sumtab td:nth-child(2){display:none}
+  .sumtab th,.sumtab td{padding:11px 12px}
+}
+.daysep td{background:var(--band);font-family:var(--disp);font-size:1rem;letter-spacing:.2em;
+  color:var(--ink);padding:10px 16px;border-bottom:1px solid var(--rule)}
+.daysep .dd{font-family:var(--body);font-size:.78rem;letter-spacing:0;text-transform:none;color:var(--inkSoft)}
+.leg{font-weight:500;min-width:200px}
+.arrow{color:var(--ember);margin:0 4px}
+.chip{display:inline-block;font-size:.72rem;letter-spacing:.06em;padding:2px 9px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.c-rail{color:var(--frost)} .c-shin{color:var(--ember)} .c-car{color:var(--gold)}
+.c-walk{color:var(--pine)} .c-misc{color:var(--inkSoft)}
+
+/* ---- bars ---- */
+.bars{margin-top:24px;display:grid;gap:10px}
+.bar{display:grid;grid-template-columns:92px 1fr 44px;gap:11px;align-items:center;font-size:.82rem}
+.bn{color:var(--inkSoft)}
+.bt{height:7px;background:var(--band);overflow:hidden}
+.bf{display:block;height:100%;background:var(--ember)}
+.bv{text-align:right;color:var(--inkSoft);font-variant-numeric:tabular-nums}
+
+/* ---- rule box / hints ---- */
+.rulebox{display:flex;gap:13px;align-items:flex-start;margin-bottom:20px;padding:16px 18px;
+  background:var(--paper2);border:1px solid var(--ember);box-shadow:var(--shadow)}
+.rulebox .x{font-family:var(--disp);font-size:1.9rem;line-height:.9;color:var(--ember);flex:none}
+.rulebox p{margin:0;font-size:.87rem;line-height:1.65}
+.maphint{display:flex;gap:10px;align-items:flex-start;margin:0 0 20px;padding:12px 16px;
+  border:1px dashed var(--pine);background:var(--paper2);font-size:.84rem;line-height:1.6;color:var(--inkSoft)}
+.maphint p{margin:0}
+.maphint b{color:var(--pine)}
+.ml{color:inherit;text-decoration:none;border-bottom:1px dashed var(--pine);padding-bottom:1px;white-space:nowrap}
+.ml:hover,.ml:focus-visible{color:var(--ember);border-bottom-color:var(--ember);border-bottom-style:solid}
+
+/* ---- trip overview timeline ---- */
+.tline{position:relative;max-width:680px;margin:0 auto;padding-left:4px}
+.tline::before{content:"";position:absolute;left:calc(50% - .5px);top:14px;bottom:14px;width:1px;background:var(--rule)}
+.tl-cap{text-align:center;font-family:var(--disp);font-size:.84rem;letter-spacing:.02em;color:var(--inkSoft)}
+.tstop{display:grid;grid-template-columns:1fr 34px 1fr;align-items:center;gap:0;padding:11px 0}
+.tstop figure{margin:0;background:var(--paper2);padding:6px 6px 7px;border:1px solid var(--ruleSoft);box-shadow:var(--shadow);
+  width:132px;transform:rotate(var(--rot,0deg))}
+.tstop img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.tstop .node{position:relative;display:flex;align-items:center;justify-content:center}
+.tstop .node i{width:9px;height:9px;border-radius:50%;background:var(--paper);border:1.5px solid var(--ember);display:block;z-index:1}
+.tstop .tx{font-size:.86rem;line-height:1.5}
+.tstop .td{font-family:var(--disp);font-size:1.12rem;letter-spacing:.02em;color:var(--ink)}
+.tstop .tp{color:var(--inkSoft);font-size:.8rem}
+.tstop:nth-child(odd) figure{--rot:-1.4deg}
+.tstop:nth-child(even) figure{--rot:1.4deg}
+.tstop>figure{justify-self:center}
+.tstop .tx{max-width:310px}
+.tstop.ts-l>figure{justify-self:end;margin-right:18px}
+.tstop.ts-l>.tx{text-align:left;margin-left:18px}
+.tstop.ts-r>.tx{text-align:right;margin-left:auto;margin-right:18px}
+.tstop.ts-r>figure{justify-self:start;margin-left:18px}
+
+/* ---- stay cards ---- */
+.stay{background:var(--paper2);border:1px solid var(--ruleSoft);box-shadow:var(--shadow);margin-bottom:28px;overflow:hidden}
+.stay-h{padding:18px 20px 14px;border-bottom:1px solid var(--ruleSoft);text-align:center}
+.badge{display:inline-block;font-family:var(--disp);font-size:.78rem;letter-spacing:.02em;
+  color:var(--ember);border:1px solid var(--ember);padding:3px 12px;margin-bottom:9px}
+.stay-h h3{font-family:var(--disp);font-weight:500;font-size:1.6rem;letter-spacing:.03em;margin:0 0 5px;line-height:1.25}
+.stay-h .sd{font-size:.8rem;color:var(--inkSoft)}
+.hero{display:block;position:relative;line-height:0}
+.hero img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.hero .tag{position:absolute;left:12px;top:12px;font-family:var(--disp);font-size:.76rem;letter-spacing:.02em;
+  background:var(--leadBg);color:var(--leadFg);padding:4px 12px;line-height:1.6}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px}
+.thumbs img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--band)}
+.stay-b{padding:18px 20px 22px}
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px 18px;margin:4px 0 14px;
+  padding-block:14px;border-top:1px solid var(--ruleSoft);border-bottom:1px solid var(--ruleSoft)}
+.spec .k{display:block;font-size:.72rem;letter-spacing:.02em;color:var(--inkFaint)}
+.spec .v{display:block;font-size:.9rem;font-weight:500;margin-top:1px}
+.spec .v.big{font-family:var(--disp);font-size:1.5rem;font-weight:500;color:var(--ember);line-height:1.2}
+.warn{font-size:.83rem;line-height:1.6;color:var(--inkSoft);background:var(--bandSoft);
+  border-left:2px solid var(--gold);padding:11px 14px;margin:0 0 13px}
+.btnrow{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:14px}
+.btn{display:inline-block;font-family:var(--disp);font-size:.92rem;letter-spacing:.02em;
+  background:var(--leadBg);color:var(--leadFg);text-decoration:none;padding:10px 20px;border:1px solid var(--leadBg)}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--pine);border-color:var(--pine)}
+.btn.ghost:hover{background:var(--pine);color:var(--paper2)}
+.altlabel{margin:26px 0 12px;font-family:var(--disp);font-size:.84rem;letter-spacing:.02em;
+  color:var(--inkSoft);text-align:center;position:relative}
+.altlabel::before,.altlabel::after{content:"";position:absolute;top:50%;width:14%;height:1px;background:var(--rule)}
+.altlabel::before{left:0}.altlabel::after{right:0}
+.alts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.alt{border:1px solid var(--ruleSoft);background:var(--paper);min-width:0}
+.alt img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.ab{padding:12px 14px 14px}
+.an{font-family:var(--disp);font-size:1.12rem;font-weight:500;line-height:1.3}
+.ap{color:var(--ember);font-size:.84rem;font-weight:600;margin:2px 0 5px}
+.ax{font-size:.79rem;line-height:1.55;color:var(--inkSoft)}
+.ab a{display:inline-block;margin-top:8px;font-size:.81rem;color:var(--pine);text-decoration:none;border-bottom:1px solid currentColor}
+.amap{display:inline-block;margin-left:10px;font-size:.81rem;color:var(--inkSoft);text-decoration:none;border-bottom:1px dashed currentColor}
+.amap:hover{color:var(--ember)}
+
+/* ---- meals ---- */
+.meals{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:18px}
+.meal{background:var(--paper2);border:1px solid var(--ruleSoft);box-shadow:var(--shadow);padding:18px 20px 16px;min-width:0}
+.meal h4{font-family:var(--disp);font-weight:400;font-size:1.3rem;letter-spacing:.02em;
+  margin:0;color:var(--ember);text-align:center}
+.meal .md{font-size:.78rem;color:var(--inkSoft);text-align:center;padding-bottom:11px;margin-bottom:11px;border-bottom:1px solid var(--ruleSoft)}
+.meal ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.meal li{display:flex;gap:12px;justify-content:space-between;font-size:.85rem;line-height:1.55;align-items:baseline}
+.meal li>span:last-child{color:var(--inkSoft);white-space:nowrap;font-variant-numeric:tabular-nums}
+.mt{display:flex;justify-content:space-between;align-items:baseline;margin-top:13px;padding-top:11px;border-top:1px solid var(--rule);
+  font-family:var(--disp);font-size:1.05rem;letter-spacing:.04em}
+.mt span:last-child{color:var(--ember)}
+
+/* ---- attractions (fees) ---- */
+.attrs{display:grid;gap:16px}
+.attr{display:grid;grid-template-columns:1fr 150px;gap:18px;align-items:center;background:var(--paper2);
+  border:1px solid var(--ruleSoft);box-shadow:var(--shadow);padding:16px 18px;min-width:0}
+.attr .ai{margin:0;min-width:0}
+.attr .day{font-family:var(--disp);font-size:.76rem;letter-spacing:.02em;color:var(--ember)}
+.attr h4{font-family:var(--disp);font-weight:500;font-size:1.3rem;margin:2px 0 4px;line-height:1.3}
+.attr .ad{font-size:.81rem;color:var(--inkSoft);line-height:1.6;margin:0 0 9px}
+.attr .af{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.82rem;padding-top:9px;border-top:1px solid var(--ruleSoft)}
+.attr .af b{font-family:var(--disp);font-size:1.12rem;color:var(--ember);font-weight:500}
+.attr .af span{color:var(--inkSoft)}
+.attr figure{margin:0;background:var(--paper);padding:5px 5px 6px;border:1px solid var(--ruleSoft);transform:rotate(1deg)}
+.attr:nth-child(even) figure{transform:rotate(-1.2deg)}
+.attr figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.feetot{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-top:18px;padding:14px 18px;
+  background:var(--bandSoft);border:1px solid var(--rule);font-family:var(--disp);font-size:1.15rem;letter-spacing:.04em}
+.feetot b{color:var(--ember)}
+
+/* ---- notes ---- */
+.notes{background:var(--paper2);border:1px solid var(--ruleSoft);box-shadow:var(--shadow);padding:22px 24px 24px}
+.notes h3{font-family:var(--disp);font-weight:500;font-size:1.22rem;letter-spacing:.02em;
+  margin:22px 0 9px;padding-bottom:7px;border-bottom:1px solid var(--ruleSoft);color:var(--ember)}
+.notes h3:first-child{margin-top:0}
+.notes ul{margin:0;padding-left:19px;display:grid;gap:7px}
+.notes li{font-size:.86rem;line-height:1.65}
+
+footer{padding-block:30px 44px;text-align:center;font-size:.78rem;color:var(--inkFaint);line-height:1.7;
+  border-top:1px solid var(--ruleSoft);margin-top:40px}
+
+@media (max-width:640px){
+  .mast{padding-block:30px 22px}
+  .covers{gap:7px}
+  .covers figure{padding:5px 5px 18px}
+  .covers figcaption{font-size:.82rem}
+  .tstop{grid-template-columns:1fr 26px 1fr}
+  .tstop figure{width:100%;max-width:118px}
+  .tstop .td{font-size:.95rem;letter-spacing:.1em}
+  .tstop .tp{font-size:.74rem}
+  .attr{grid-template-columns:1fr;gap:12px}
+  .attr figure{order:-1}
+  .shead .script{font-size:1.8rem}
+  .shead h2{font-size:1.18rem;letter-spacing:.02em}
+  .tv{font-size:1.9rem}
+}
+
+.stay-h .when{display:block;font-size:.8rem;color:var(--inkSoft)}
+.stay-h .goal{display:block;font-size:.78rem;color:var(--inkFaint);margin-top:2px}
+.hero .pick{position:absolute;left:12px;top:12px;font-family:var(--disp);font-size:.76rem;letter-spacing:.02em;
+  background:var(--leadBg);color:var(--leadFg);padding:4px 13px;line-height:1.7}
+.meal li>span:first-child{display:flex;gap:9px;align-items:flex-start;min-width:0}
+.meal li .ic{width:14px;height:14px;flex:none;color:var(--gold);margin-top:4px}
+
+.tstop>*{min-width:0}
+.tstop .tx,.tstop .td,.tstop .tp{overflow-wrap:anywhere;word-break:break-word;min-width:0}
+@media (max-width:640px){
+  .tline{padding-left:0}
+  .tline::before{left:115px}
+  .tstop{grid-template-columns:104px 22px 1fr;gap:0;padding:9px 0}
+  .tstop>figure,.tstop.ts-l>figure,.tstop.ts-r>figure{order:1;width:104px;max-width:104px;justify-self:start;margin:0;padding:4px 4px 5px}
+  .tstop .node{order:2;padding:0}
+  .tstop>.tx,.tstop.ts-l>.tx,.tstop.ts-r>.tx{order:3;text-align:left;margin:0 0 0 14px;max-width:none}
+  .tl-cap{text-align:left;padding-left:92px}
+}
+
+/* ---- timeline gallery ---- */
+.gal{display:grid;gap:5px;width:132px}
+.galmain{position:relative;margin:0;background:var(--paper2);padding:6px 6px 7px;border:1px solid var(--ruleSoft);
+  box-shadow:var(--shadow);cursor:zoom-in;transition:transform .15s ease}
+.galmain:hover,.galmain:focus-visible{transform:translateY(-2px)}
+.galmain img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.galn{position:absolute;right:9px;bottom:11px;font-family:var(--disp);font-size:.7rem;letter-spacing:.02em;
+  background:rgba(28,26,23,.78);color:#F6F0E6;padding:2px 8px;line-height:1.6}
+.galrow{display:flex;gap:4px}
+.galt{flex:1 1 0;min-width:0;padding:0;border:1px solid var(--ruleSoft);background:var(--paper2);cursor:zoom-in;overflow:hidden;
+  aspect-ratio:1/1;font-family:var(--disp);font-size:.84rem;color:var(--inkSoft);display:block}
+.galt img{display:block;width:100%;height:100%;object-fit:cover}
+.galt:hover{border-color:var(--ember)}
+.galt.hasmore{position:relative}
+.galmore{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(28,26,23,.58);color:#F6F0E6;font-family:var(--disp);font-size:1rem;letter-spacing:.06em}
+.tstop>.gal{justify-self:center}
+.tstop.ts-l>.gal{justify-self:end;margin-right:18px}
+.tstop.ts-r>.gal{justify-self:start;margin-left:18px}
+
+/* ---- lightbox ---- */
+.lb{position:fixed;inset:0;z-index:60;background:rgba(24,21,17,.94);display:flex;align-items:center;justify-content:center;
+  padding:max(18px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(18px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb-fig{margin:0;max-width:min(1100px,100%);max-height:100%;display:flex;flex-direction:column;align-items:center;gap:12px}
+.lb-fig img{max-width:100%;max-height:78vh;object-fit:contain;background:#141210;box-shadow:0 20px 60px -20px rgba(0,0,0,.8)}
+.lb-fig figcaption{color:#EDE4D6;font-size:.88rem;line-height:1.6;text-align:center;max-width:62ch}
+.lb-x{position:absolute;top:max(10px,env(safe-area-inset-top,0px));right:max(12px,env(safe-area-inset-right,0px));
+  width:44px;height:44px;font-size:1.9rem;line-height:1;background:none;border:0;color:#EDE4D6;cursor:pointer}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:72px;font-size:2.4rem;line-height:1;
+  background:rgba(0,0,0,.28);border:0;color:#EDE4D6;cursor:pointer}
+.lb-prev{left:max(4px,env(safe-area-inset-left,0px))}
+.lb-next{right:max(4px,env(safe-area-inset-right,0px))}
+.lb-nav:hover{background:rgba(0,0,0,.5)}
+.lb-count{position:absolute;bottom:max(12px,env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;
+  font-family:var(--disp);letter-spacing:.2em;color:rgba(237,228,214,.7);font-size:.84rem}
+body.lb-open{overflow:hidden}
+@media (max-width:640px){
+  .gal{width:104px}
+  .galrow{gap:3px}
+  .galn{font-size:.62rem;padding:1px 6px;right:7px;bottom:9px}
+  .lb-nav{width:44px;height:60px;font-size:2rem}
+  .lb-fig img{max-height:70vh}
+}
+
+.agal{width:150px}
+.attr .gal{justify-self:end}
+@media (max-width:640px){ .agal{width:100%} .attr .gal{justify-self:stretch} }
+
+/* travel-editorial type: lining figures so prices read cleanly in the serif */
+:root{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
+.tv,.amt,.spec .v.big,.attr .af b,.feetot b,.mt,.r,tfoot td{font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1}
+.shead h2,.mast h1,.daysep td,.stay-h h3,.meal h4,.attr h4,.an,.tstop .td,.notes h3,th,.badge,.btn,.altlabel,.tl,.tl-cap,.thb,.spec .k
+  {font-synthesis:none}
+body{letter-spacing:.005em}
+.notes li,.attr .ad,.meal li,.ax,.os,.ts,.sub{letter-spacing:0}
+
+/* ---- per-day place galleries ---- */
+.places{display:grid;gap:15px;width:300px}
+.pname{font-weight:600;font-size:.85rem;line-height:1.4;margin-bottom:5px;color:var(--ink);
+  padding-bottom:4px;border-bottom:1px solid var(--ruleSoft)}
+.pn{font-weight:400;font-size:.72rem;color:var(--inkFaint);margin-left:6px}
+.pg{display:grid;grid-template-columns:1.85fr 1fr;gap:5px}
+.pg.solo{grid-template-columns:1fr}
+.pbig{margin:0;background:var(--paper2);padding:5px 5px 6px;border:1px solid var(--ruleSoft);
+  box-shadow:var(--shadow);cursor:zoom-in;transition:transform .15s ease;min-width:0}
+.pbig:hover,.pbig:focus-visible{transform:translateY(-2px)}
+.pbig img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.psm{display:grid;gap:5px;min-width:0}
+.psm button{padding:0;border:1px solid var(--ruleSoft);background:var(--paper2);cursor:zoom-in;
+  overflow:hidden;display:block;min-height:0}
+.psm button:hover{border-color:var(--ember)}
+.psm img{display:block;width:100%;height:100%;min-height:52px;object-fit:cover}
+.pempty{border:1px dashed var(--rule);background:var(--bandSoft);color:var(--inkFaint);
+  font-size:.78rem;display:flex;align-items:center;justify-content:center;aspect-ratio:4/3}
+.tstop>.places{justify-self:center}
+.tstop.ts-l>.places{justify-self:end;margin-right:18px}
+.tstop.ts-r>.places{justify-self:start;margin-left:18px}
+@media (max-width:640px){
+  .tline::before{left:10px}
+  .tstop{grid-template-columns:22px 1fr;gap:0;padding:14px 0}
+  .tstop>.node,.tstop.ts-l>.node,.tstop.ts-r>.node{order:1;padding:0;align-self:start;margin-top:4px}
+  .tstop>.tx,.tstop.ts-l>.tx,.tstop.ts-r>.tx{order:2;text-align:left;margin:0 0 0 12px;max-width:none}
+  .tstop>.places,.tstop.ts-l>.places,.tstop.ts-r>.places{order:3;grid-column:2/-1;width:100%;
+    margin:11px 0 0;justify-self:stretch}
+  .tl-cap{text-align:left;padding-left:0}
+}
+
+/* the old .tstop figure sizing must not touch the new place galleries */
+.tstop .pbig{width:auto;max-width:none;transform:none;padding:5px 5px 6px}
+.tstop .pbig:hover,.tstop .pbig:focus-visible{transform:translateY(-2px)}
+.tstop .places figure{width:auto}
+.psm{grid-auto-rows:1fr}
+
+.posterfig{margin:0 auto;max-width:560px;background:var(--paper2);padding:10px 10px 12px;
+  border:1px solid var(--ruleSoft);box-shadow:var(--shadow);cursor:zoom-in;transition:transform .15s ease}
+.posterfig:hover,.posterfig:focus-visible{transform:translateY(-3px)}
+.posterfig img{display:block;width:100%}
+
+.posterpair{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:740px;margin:0 auto}
+.posterfig figcaption{margin-top:9px;text-align:center;font-size:.82rem;color:var(--inkSoft)}
+
+/* ---- collapsible day detail ---- */
+.dx{margin:10px 0 0;border:1px solid var(--ruleSoft);background:var(--paper2);box-shadow:var(--shadow)}
+.dx+.dx{margin-top:7px}
+.dx>summary{list-style:none;cursor:pointer;padding:10px 14px;display:flex;flex-wrap:wrap;gap:3px 10px;
+  align-items:baseline;user-select:none}
+.dx>summary::-webkit-details-marker{display:none}
+.dx>summary::after{content:"+";margin-left:auto;font-family:var(--disp);font-size:1.25rem;line-height:1;color:var(--ember)}
+.dx[open]>summary::after{content:"\2212"}
+.dx>summary:hover{background:var(--bandSoft)}
+.sm1{font-family:var(--disp);font-size:1rem;letter-spacing:.02em;color:var(--ink)}
+.sm2{font-size:.76rem;color:var(--inkSoft)}
+.dx[open]>summary{border-bottom:1px solid var(--ruleSoft)}
+.wx{padding:13px 14px 4px}
+.wxh{font-family:var(--disp);font-size:.84rem;letter-spacing:.02em;color:var(--ember);margin-bottom:9px}
+.wxg{display:grid;grid-template-columns:repeat(auto-fit,minmax(82px,1fr));gap:9px 12px}
+.wxg .k{display:block;font-size:.68rem;letter-spacing:.1em;color:var(--inkFaint)}
+.wxg .v{display:block;font-family:var(--disp);font-size:1.12rem;font-weight:500;color:var(--ink);line-height:1.3}
+.wxn{font-size:.79rem;line-height:1.55;color:var(--inkSoft);margin:11px 0 0;padding-top:9px;border-top:1px solid var(--ruleSoft)}
+.est{color:var(--inkFaint);font-size:.74rem}
+.sched{width:100%;min-width:0;border-collapse:collapse;margin:4px 0 0}
+.sched td{padding:9px 14px;border-bottom:1px solid var(--ruleSoft);vertical-align:top;font-size:.84rem;line-height:1.5}
+.sched tr:last-child td{border-bottom:0}
+.sched .tm{width:64px;font-family:var(--disp);font-size:1rem;color:var(--ember);white-space:nowrap;font-variant-numeric:lining-nums tabular-nums}
+.sched .du{width:86px;text-align:right;color:var(--inkSoft);white-space:nowrap;font-size:.78rem}
+.sched .nt{display:block;font-size:.76rem;color:var(--inkSoft);line-height:1.5;margin-top:2px}
+.dx.ph .places{width:100%;padding:12px 14px 14px}
+.dx.ph .pg{grid-template-columns:1.85fr 1fr}
+
+/* day detail blocks sit in the photo column, like .places */
+.daycol{width:300px;justify-self:center;min-width:0;display:grid;gap:7px;align-content:start}
+.tstop.ts-l>.daycol{justify-self:end;margin-right:18px}
+.tstop.ts-r>.daycol{justify-self:start;margin-left:18px}
+.daycol .dx{margin:0}
+@media (max-width:640px){
+  .tstop>.daycol,.tstop.ts-l>.daycol,.tstop.ts-r>.daycol{order:3;grid-column:2/-1;width:auto;
+    justify-self:stretch;margin:10px 0 0 12px}
+  .dx>summary{padding:10px 12px}
+  .sched td{padding:8px 11px}
+  .sched .tm{width:56px;font-size:.92rem}
+  .sched .du{width:72px;font-size:.74rem}
+}
+
+.daylink{display:block;text-decoration:none;background:var(--paper2);border:1px solid var(--ruleSoft);
+  box-shadow:var(--shadow);transition:transform .15s ease,border-color .15s ease}
+.daylink:hover,.daylink:focus-visible{transform:translateY(-2px);border-color:var(--ember)}
+.daylink figure{margin:0;padding:6px 6px 0}
+.daylink img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.daylink .dl{padding:10px 13px 13px}
+.dl1{display:block;font-family:var(--disp);font-size:1.02rem;letter-spacing:.1em;color:var(--ember)}
+.dl2{display:block;font-size:.76rem;color:var(--inkSoft);line-height:1.5;margin-top:2px}
+</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+
+<svg class="sprite" aria-hidden="true"><defs>
+<g id="i-plane" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M11 2.6c0-.7.4-1.2 1-1.2s1 .5 1 1.2l.4 5.7 7.1 3.3v1.9l-7.2-1.6-.4 4 2.3 1.5v1.5L12 17.9l-3.2.9v-1.5l2.3-1.5-.4-4-7.2 1.6v-1.9l7.1-3.3z"/></g>
+<g id="i-train" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><rect x="5" y="2.6" width="14" height="13" rx="3.5"/><path d="M6.5 9.5h11M9 5.6h6M8.5 12.6h.01M15.5 12.6h.01M8 15.6 6 21.4M16 15.6l2 5.8M5 19.4h14"/></g>
+<g id="i-camera" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M2.6 7.5h4L8 5h8l1.4 2.5h4v11.4H2.6z"/><circle cx="12" cy="13" r="3.6"/></g>
+<g id="i-cup" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12v6.5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M16 9.5h2.2a2.3 2.3 0 0 1 0 4.6H16M3 21.4h14"/><path d="M8 5.2V3M12 5.2V3"/></g>
+<g id="i-bed" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 19V7M2.6 12.4h18.8V19M2.6 15.6h18.8"/><path d="M6.2 12.4v-2.6a1.6 1.6 0 0 1 1.6-1.6h3.4a1.6 1.6 0 0 1 1.6 1.6v2.6"/><path d="M21.4 19v-3.4"/></g>
+<g id="i-mtn" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M1.6 19.4 8.5 6.6l4.3 7.6M10.4 19.4l5-9.2 7 9.2z"/></g>
+<g id="i-home" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M3 10.4 12 3l9 7.4"/><path d="M5.2 12v8.4h13.6V12"/><path d="M9.6 20.4v-5.2h4.8v5.2"/></g>
+<g id="i-bag" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><rect x="3.2" y="7.2" width="17.6" height="13.2" rx="2"/><path d="M8.6 7.2V5a1.8 1.8 0 0 1 1.8-1.8h3.2A1.8 1.8 0 0 1 15.4 5v2.2M3.2 12h17.6"/></g>
+<g id="i-sun" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></g>
+<g id="i-moon" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M20.2 14.4A8.6 8.6 0 0 1 9.6 3.8a8.6 8.6 0 1 0 10.6 10.6z"/></g>
+<g id="i-snow" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M12 2.6v18.8M3.9 7.3l16.2 9.4M20.1 7.3 3.9 16.7M12 6.4 9.4 4.4M12 6.4l2.6-2M12 17.6l-2.6 2M12 17.6l2.6 2"/></g>
+<g id="i-coin" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><circle cx="12" cy="12" r="8.8"/><path d="M12 7v10M9.4 9.6h4a1.9 1.9 0 0 1 0 3.8h-4"/></g>
+</defs></svg>
+<header class="mast"><div class="wrap">
+  <div class="kick">Winter Escape</div>
+  <h1>Japan</h1>
+  <div class="thb">2026 &mdash; 2027</div>
+  <div class="th">26 ธันวาคม 2569 &ndash; 2 มกราคม 2570 &middot; 8 วัน 7 คืน &middot; ผู้เดินทาง 7 คน</div>
+  <div class="strip" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-plane"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-train"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-mtn"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-camera"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-cup"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-bed"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-bag"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-snow"/></svg></div>
+  <div class="covers">
+    <figure><img src="img/ph_d1_shinkyo.jpg" alt="สะพานชินเคียว นิกโก้ ในหิมะ" loading="lazy"><figcaption>Nikko</figcaption></figure>
+    <figure><img src="img/ph_d4_gala_slope.jpg" alt="ลานสกี GALA Yuzawa" loading="lazy"><figcaption>Yuzawa</figcaption></figure>
+    <figure><img src="img/ph_d7_tokyo_illum.jpg" alt="ไฟประดับฤดูหนาวโตเกียว" loading="lazy"><figcaption>Tokyo</figcaption></figure>
+  </div>
+  <div class="facts">
+    <span class="fact">เส้นทาง <b>Narita &middot; Nikko &middot; Echigo-Yuzawa &middot; Tokyo</b></span>
+    <span class="fact">อัตราแลกเปลี่ยน <b>&yen;1 &asymp; &#3647;0.23</b></span>
+    <span class="fact">ข้อมูล <b>17 ต.ค. 2569</b></span>
+  </div>
+  <div class="totals">
+    <div class="tot lead">
+      <div class="tl">รวมต่อคน</div>
+      <div class="tv">&#3647;<span id="gpp">75,346</span></div>
+      <div class="ts">รวมตั๋วเครื่องบิน &#3647;35,000</div>
+    </div>
+    <div class="tot">
+      <div class="tl">รวมทั้งกลุ่ม 7 คน</div>
+      <div class="tv">&#3647;<span id="gall">527,422</span></div>
+      <div class="ts">ยอดที่ต้องเตรียมทั้งหมด</div>
+    </div>
+    <div class="tot">
+      <div class="tl">ไม่รวมตั๋วเครื่องบิน</div>
+      <div class="tv">&#3647;<span id="gnof">40,346</span></div>
+      <div class="ts">ต่อคน &middot; เฉลี่ย &#3647;<span id="gday">5,043</span>/วัน</div>
+    </div>
+  </div>
+  <div class="switch">
+    <div class="lbl">เลือกระดับที่พัก</div>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="sc" id="scSave" value="SAVE" checked>
+        <span><span class="on">แผนประหยัด &middot; &#3647;62,066/คน</span>
+        <span class="os">ที่พักเฉลี่ย &#3647;1,004/คน/คืน &middot; เกสต์เฮาส์ &amp; ฮอสเทล</span></span></label>
+      <label class="opt"><input type="radio" name="sc" id="scComf" value="COMF">
+        <span><span class="on">แผนสบาย &middot; &#3647;75,346/คน</span>
+        <span class="os">ที่พักเฉลี่ย &#3647;2,901/คน/คืน &middot; ห้องส่วนตัว ห้องน้ำในตัว</span></span></label>
+    </div>
+    <p class="os" style="margin-top:9px">ตัวเลขทุกจุดในหน้านี้จะเปลี่ยนตามแผนที่เลือก</p>
+  </div>
+</div></header>
+
+<nav><div class="wrap">
+  <a href="index.html">&larr; คู่มือทริป</a>
+  <a href="#poster">แผนที่</a>
+  <a href="#trip">เส้นทาง</a>
+  <a href="#sum">สรุปรวม</a>
+  <a href="#move">ค่าเดินทาง</a>
+  <a href="#stay">ค่าที่พัก</a>
+  <a href="#food">ค่าอาหาร</a>
+  <a href="#fee">ค่าเข้า</a>
+  <a href="#note">หมายเหตุ</a>
+</div></nav>
+
+<section id="poster"><div class="wrap">
+  <div class="shead"><span class="script">The Map</span><h2>แผนที่เส้นทาง</h2>
+  <span class="sub">โปสเตอร์หน้าเดียว 2 แบบ &mdash; กดเพื่อดูเต็มจอ</span></div>
+  <div class="posterpair">
+    <figure class="posterfig" data-lb="img/poster_map.jpg" data-cap="แผนที่เส้นทางจริงจาก Google Maps &middot; Japan Winter Escape 2026&ndash;2027" data-lbg="poster" tabindex="0" role="button" aria-label="เปิดโปสเตอร์แผนที่จริงเต็มจอ">
+      <img src="img/poster_map_sm.jpg" alt="โปสเตอร์แผนที่เส้นทางจริง" loading="lazy">
+      <figcaption>แบบแผนที่จริง (Google Maps)</figcaption>
+    </figure>
+    <figure class="posterfig" data-lb="img/poster_japan.jpg" data-cap="โปสเตอร์แผนที่วาดเอง &middot; Japan Winter Escape 2026&ndash;2027" data-lbg="poster" tabindex="0" role="button" aria-label="เปิดโปสเตอร์แบบวาดเต็มจอ">
+      <img src="img/poster_japan_sm.jpg" alt="โปสเตอร์แผนที่วาดเอง" loading="lazy">
+      <figcaption>แบบวาดเอง (สีน้ำ)</figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<section id="trip"><div class="wrap">
+  <div class="shead"><span class="script">Trip Overview</span><h2>เส้นทางทั้งทริป</h2><span class="sub">8 วัน 7 คืน &middot; Narita &rarr; Nikko &rarr; Echigo-Yuzawa &rarr; Tokyo &rarr; Narita</span></div>
+  <div class="tl-cap">Start</div>
+  <div class="tline">
+    <div class="tstop ts-l"><div class="daycol"><a class="daylink" href="d1.html"><figure><img src="img/ph_d1_shinkyo.jpg" alt="Day 01" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 11 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:52&ndash;16:31 &middot; รูป 6 รูป</span></div></a></div><div class="node"><i></i></div><div class="tx"><div class="td">Day 01 &middot; 26 ธ.ค.</div><div class="tp"><b>Narita &rarr; Asakusa &rarr; Nikko</b></div><div class="tp">สะพานชินเคียว &middot; ย่านเมืองเก่านิกโก้</div></div></div>
+    <div class="tstop ts-r"><div class="tx"><div class="td">Day 02 &middot; 27 ธ.ค.</div><div class="tp"><b>Okunikko เต็มวัน</b></div><div class="tp">น้ำตกเคกง &middot; ทะเลสาบชูเซนจิ &middot; ออนเซ็นยูโมโตะ</div></div><div class="node"><i></i></div><div class="daycol"><a class="daylink" href="d2.html"><figure><img src="img/ph_d2_kegon.jpg" alt="Day 02" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 11 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:53&ndash;16:32 &middot; รูป 7 รูป</span></div></a></div></div>
+    <div class="tstop ts-l"><div class="daycol"><a class="daylink" href="d3.html"><figure><img src="img/ph_d3_toshogu_winter.jpg" alt="Day 03" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 12 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:57&ndash;16:35 &middot; รูป 6 รูป</span></div></a></div><div class="node"><i></i></div><div class="tx"><div class="td">Day 03 &middot; 28 ธ.ค.</div><div class="tp"><b>Nikko &rarr; Echigo-Yuzawa</b></div><div class="tp">ศาลเจ้าโทโชกุ &middot; ชินคันเซ็นเข้าเมืองหิมะ</div></div></div>
+    <div class="tstop ts-r"><div class="tx"><div class="td">Day 04 &middot; 29 ธ.ค.</div><div class="tp"><b>GALA Yuzawa</b></div><div class="tp">กระเช้าขึ้นยอดเขา &middot; ลานหิมะ &middot; ออนเซ็น</div></div><div class="node"><i></i></div><div class="daycol"><a class="daylink" href="d4.html"><figure><img src="img/ph_d4_gala_slope.jpg" alt="Day 04" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 10 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:57&ndash;16:35 &middot; รูป 5 รูป</span></div></a></div></div>
+    <div class="tstop ts-l"><div class="daycol"><a class="daylink" href="d5.html"><figure><img src="img/ph_d5_tunnel_light.jpg" alt="Day 05" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 8 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:58&ndash;16:36 &middot; รูป 2 รูป</span></div></a></div><div class="node"><i></i></div><div class="tx"><div class="td">Day 05 &middot; 30 ธ.ค.</div><div class="tp"><b>Kiyotsu Gorge</b></div><div class="tp">อุโมงค์แห่งแสง Tunnel of Light</div></div></div>
+    <div class="tstop ts-r"><div class="tx"><div class="td">Day 06 &middot; 31 ธ.ค.</div><div class="tp"><b>ส่งท้ายปีที่ Yuzawa</b></div><div class="tp">โทชิโคชิโซบะ &middot; ออนเซ็น &middot; นับถอยหลัง</div></div><div class="node"><i></i></div><div class="daycol"><a class="daylink" href="d6.html"><figure><img src="img/ph_d6_yuzawa_night.jpg" alt="Day 06" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 9 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:57&ndash;16:37 &middot; รูป 2 รูป</span></div></a></div></div>
+    <div class="tstop ts-l"><div class="daycol"><a class="daylink" href="d7.html"><figure><img src="img/ph_d7_sensoji.jpg" alt="Day 07" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 9 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:50&ndash;16:37 &middot; รูป 3 รูป</span></div></a></div><div class="node"><i></i></div><div class="tx"><div class="td">Day 07 &middot; 1 ม.ค.</div><div class="tp"><b>Yuzawa &rarr; Tokyo</b></div><div class="tp">ฮัตสึโมเดะวัดเซนโซจิ &middot; Hoppy Street</div></div></div>
+    <div class="tstop ts-r"><div class="tx"><div class="td">Day 08 &middot; 2 ม.ค.</div><div class="tp"><b>Shinjuku &rarr; Narita</b></div><div class="tp">โอโมอิเดะโยโกโจ &middot; บินกลับกรุงเทพฯ</div></div><div class="node"><i></i></div><div class="daycol"><a class="daylink" href="d8.html"><figure><img src="img/ph_d8_shinjuku.jpg" alt="Day 08" loading="lazy"></figure><div class="dl"><span class="dl1">ดูรายละเอียดวันนี้ &rarr;</span><span class="dl2">ตารางเวลา 9 ช่วง &middot; ที่พัก &middot; ค่าใช้จ่าย</span><span class="dl2">อากาศ &middot; พระอาทิตย์ 06:50&ndash;16:38 &middot; รูป 1 รูป</span></div></a></div></div>
+  </div>
+  <div class="tl-cap">End</div>
+</div></section>
+
+<!-- ===================== SUMMARY ===================== -->
+<section id="sum"><div class="wrap">
+  <div class="shead">
+    <span class="script">Trip Budget</span><h2>สรุปรวม</h2><span class="sub">ทุกหมวด &middot; ต่อคน และ 7 คน</span>
+    <span class="amt">&#3647;<span id="sumAmt">527,422</span></span>
+  </div>
+  <div class="strip" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-coin"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-bag"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-plane"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-bed"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-cup"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-camera"/></svg></div>
+  <div style="height:22px"></div>
+  <div class="scroll"><table class="sumtab">
+    <thead><tr><th>หมวด</th><th>รายละเอียด</th><th class="r">ต่อคน</th><th class="r">รวม 7 คน</th></tr></thead>
+    <tbody>
+      <tr><td><b>ตั๋วเครื่องบิน</b><span class="dmob">กรุงเทพฯ – โตเกียว ไป-กลับ</span></td><td>กรุงเทพฯ – โตเกียว ไป-กลับ<span class="note-sm">ราคาที่ Bankk แจ้ง</span></td><td class="r">฿35,000</td><td class="r">฿245,000</td></tr>
+      <tr><td><b>เดินทางในญี่ปุ่น</b><span class="dmob">รถไฟ ชินคันเซ็น และเหมารถ (ไม่ใช้รถบัส)</span></td><td>รถไฟ ชินคันเซ็น และเหมารถ (ไม่ใช้รถบัส)</td><td class="r">฿8,915</td><td class="r">฿62,405</td></tr>
+      <tr><td><b>ที่พัก 7 คืน</b><span class="dmob" id="stayDetailM">Nikko 2 · Yuzawa 4 (Kaido) · Tokyo 1</span></td><td id="stayDetail">Nikko 2 · Yuzawa 4 (Kaido) · Tokyo 1</td><td class="r">฿<span id="stayPP">20,307</span></td><td class="r">฿<span id="stayAll">142,151</span></td></tr>
+      <tr><td><b>อาหาร + เครื่องดื่ม</b><span class="dmob">ร้านเล็ก ราเมง อิซากายะ เบียร์ธรรมดา</span></td><td>ร้านเล็ก ราเมง อิซากายะ เบียร์ธรรมดา</td><td class="r">฿6,647</td><td class="r">฿46,529</td></tr>
+      <tr><td><b>ค่าเข้า + กิจกรรม</b><span class="dmob">ศาลเจ้า น้ำตก กระเช้า ออนเซ็น อุโมงค์</span></td><td>ศาลเจ้า น้ำตก กระเช้า ออนเซ็น อุโมงค์</td><td class="r">฿2,477</td><td class="r">฿17,340</td></tr>
+      <tr><td><b>จิปาถะ</b><span class="dmob">SIM ฿500 · ประกัน ฿800 · เผื่อฉุกเฉิน ฿700</span></td><td>SIM ฿500 · ประกัน ฿800 · เผื่อฉุกเฉิน ฿700</td><td class="r">฿2,000</td><td class="r">฿14,000</td></tr>
+    </tbody>
+    <tfoot><tr><td>รวมทั้งหมด</td><td></td><td class="r">฿<span id="footPP">75,346</span></td><td class="r">฿<span id="footAll">527,422</span></td></tr></tfoot>
+  </table></div>
+
+  <div class="bars">
+    <div class="bar"><span class="bn">ตั๋วเครื่องบิน</span><span class="bt"><span class="bf" id="b1" style="width:46.5%"></span></span><span class="bv" id="p1">46%</span></div>
+    <div class="bar"><span class="bn">ที่พัก</span><span class="bt"><span class="bf" id="b2" style="width:26.9%"></span></span><span class="bv" id="p2">27%</span></div>
+    <div class="bar"><span class="bn">เดินทาง</span><span class="bt"><span class="bf" id="b3" style="width:11.8%"></span></span><span class="bv" id="p3">12%</span></div>
+    <div class="bar"><span class="bn">อาหาร</span><span class="bt"><span class="bf" id="b4" style="width:8.8%"></span></span><span class="bv" id="p4">9%</span></div>
+    <div class="bar"><span class="bn">ค่าเข้า</span><span class="bt"><span class="bf" id="b5" style="width:3.3%"></span></span><span class="bv" id="p5">3%</span></div>
+    <div class="bar"><span class="bn">จิปาถะ</span><span class="bt"><span class="bf" id="b6" style="width:2.7%"></span></span><span class="bv" id="p6">3%</span></div>
+  </div>
+</div></section>
+
+<!-- ===================== TRANSPORT ===================== -->
+<section id="move"><div class="wrap">
+  <div class="shead">
+    <span class="script">Getting Around</span><h2>ค่าเดินทาง</h2><span class="sub">จากไหน ไปไหน ด้วยอะไร</span>
+    <span class="amt">&#3647;62,405 &middot; &#3647;8,915/คน</span>
+  </div>
+  <div class="strip" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-train"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-plane"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-mtn"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-snow"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-train"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-bag"/></svg></div>
+  <div style="height:22px"></div>
+
+  <div class="maphint"><span>📍</span><p>ชื่อสถานที่ที่<b>ขีดเส้นใต้</b> กดเปิด Google Maps ได้เลย &mdash; เปิดในแท็บใหม่ ไม่หลุดจากหน้านี้</p></div>
+
+  <div class="rulebox">
+    <span class="x">&times;</span>
+    <p><b>กฎของทริปนี้: ไม่นั่งรถบัส</b> &mdash; สองช่วงที่ปกติมีแต่รถบัส คือ <b>วันที่ 2</b> (ขึ้นเขา Chuzenji &ndash; Yumoto) และ <b>วันที่ 5</b> (Kiyotsu Gorge) จึงเปลี่ยนเป็น<b>เหมาจัมโบ้แท็กซี่ 9 ที่นั่ง</b> 1 คัน นั่งได้ครบ 7 คน พร้อมกระเป๋า ค่าใช้จ่ายสองวันนี้รวม &#3647;22,540 คิดเป็น &#3647;3,220/คน &mdash; เป็นส่วนที่แพงขึ้นจากแผนเดิมที่ใช้บัส</p>
+  </div>
+
+  <div class="scroll"><table>
+    <thead><tr><th>จาก &rarr; ถึง</th><th>วิธี</th><th class="r">เวลา</th><th class="r">ราคา</th><th class="r">รวม 7 คน</th></tr></thead>
+    <tbody>
+      <tr class="daysep"><td colspan="5">DAY 01 &middot; 26 ธ.ค. <span class="dd">&mdash; Narita &rarr; Asakusa &rarr; Nikko</span></td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Narita%20International%20Airport" target="_blank" rel="noopener">สนามบิน Narita</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Asakusa%20Station%20Tokyo" target="_blank" rel="noopener">Asakusa</a></td><td><span class="chip c-rail">รถไฟ</span><span class="note-sm">Keisei Access Express &mdash; ตรง ไม่ต้องเปลี่ยนขบวน</span></td><td class="r">60 นาที</td><td class="r">&yen;1,310<span class="note-sm">/คน</span></td><td class="r">&#3647;2,109</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Tobu%20Asakusa%20Station" target="_blank" rel="noopener">Asakusa (Tobu)</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Tobu%20Nikko%20Station" target="_blank" rel="noopener">Tobu-Nikko</a></td><td><span class="chip c-rail">รถไฟด่วน</span><span class="note-sm">Tobu Limited Express Kegon / Revaty &mdash; จองที่นั่ง 7 ที่ล่วงหน้า</span></td><td class="r">1 ชม. 50 นาที</td><td class="r">&yen;3,050<span class="note-sm">/คน</span></td><td class="r">&#3647;4,911</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Tobu%20Nikko%20Station" target="_blank" rel="noopener">Tobu-Nikko</a> <span class="arrow">&rarr;</span> ที่พัก</td><td><span class="chip c-walk">เดิน</span><span class="note-sm">600 ม.</span></td><td class="r">7 นาที</td><td class="r free">ฟรี</td><td class="r free">&mdash;</td></tr>
+
+      <tr class="daysep"><td colspan="5">DAY 02 &middot; 27 ธ.ค. <span class="dd">&mdash; ขึ้นเขา Okunikko เต็มวัน</span></td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Nikko%20Station" target="_blank" rel="noopener">Nikko</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Kegon%20Falls%20Nikko" target="_blank" rel="noopener">Kegon</a> &rarr; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Lake%20Chuzenji%20Nikko" target="_blank" rel="noopener">Chuzenji</a> &rarr; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Okunikko%20Yumoto%20Onsen" target="_blank" rel="noopener">Yumoto</a> &rarr; กลับ</td><td><span class="chip c-car">เหมารถ</span><span class="note-sm">จัมโบ้แท็กซี่ 9 ที่นั่ง 1 คัน ทั้งวัน ~7 ชม. &middot; รถรอระหว่างเที่ยว</span></td><td class="r">ทั้งวัน</td><td class="r">&yen;60,000<span class="note-sm">/คัน (ประมาณ)</span></td><td class="r">&#3647;13,800</td></tr>
+
+      <tr class="daysep"><td colspan="5">DAY 03 &middot; 28 ธ.ค. <span class="dd">&mdash; Toshogu &rarr; Echigo-Yuzawa</span></td></tr>
+      <tr><td class="leg">ที่พัก <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Nikko%20Toshogu%20Shrine" target="_blank" rel="noopener">Nikko Toshogu</a></td><td><span class="chip c-walk">เดิน</span><span class="note-sm">1.2 กม.</span></td><td class="r">15 นาที</td><td class="r free">ฟรี</td><td class="r free">&mdash;</td></tr>
+      <tr><td class="leg">Toshogu <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=JR%20Nikko%20Station" target="_blank" rel="noopener">JR Nikko</a></td><td><span class="chip c-car">แท็กซี่</span><span class="note-sm">2 คัน เพราะลากกระเป๋า (ถ้าไม่ลาก เดิน 20 นาที ฟรี)</span></td><td class="r">10 นาที</td><td class="r">&yen;1,500<span class="note-sm">&times; 2 คัน</span></td><td class="r">&#3647;690</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=JR%20Nikko%20Station" target="_blank" rel="noopener">JR Nikko</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Utsunomiya%20Station" target="_blank" rel="noopener">Utsunomiya</a></td><td><span class="chip c-rail">รถไฟ</span><span class="note-sm">JR Nikko Line</span></td><td class="r">45 นาที</td><td class="r">&yen;770<span class="note-sm">/คน</span></td><td class="r">&#3647;1,240</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Utsunomiya%20Station" target="_blank" rel="noopener">Utsunomiya</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Omiya%20Station%20Saitama" target="_blank" rel="noopener">Omiya</a></td><td><span class="chip c-shin">ชินคันเซ็น</span><span class="note-sm">Tohoku Shinkansen &mdash; ไม่จองที่นั่ง</span></td><td class="r">25 นาที</td><td class="r">&yen;3,160<span class="note-sm">/คน</span></td><td class="r">&#3647;5,088</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Omiya%20Station%20Saitama" target="_blank" rel="noopener">Omiya</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Echigo-Yuzawa%20Station" target="_blank" rel="noopener">Echigo-Yuzawa</a></td><td><span class="chip c-shin">ชินคันเซ็น</span><span class="note-sm">Joetsu Shinkansen Toki &mdash; ไม่จองที่นั่ง</span></td><td class="r">55 นาที</td><td class="r">&yen;5,610<span class="note-sm">/คน</span></td><td class="r">&#3647;9,032</td></tr>
+      <tr><td class="leg">สถานี <span class="arrow">&rarr;</span> ที่พัก</td><td><span class="chip c-walk">เดิน</span><span class="note-sm">600 ม.</span></td><td class="r">8 นาที</td><td class="r free">ฟรี</td><td class="r free">&mdash;</td></tr>
+
+      <tr class="daysep"><td colspan="5">DAY 04 &middot; 29 ธ.ค. <span class="dd">&mdash; GALA Yuzawa</span></td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Echigo-Yuzawa%20Station" target="_blank" rel="noopener">Echigo-Yuzawa</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=GALA%20Yuzawa%20Snow%20Resort" target="_blank" rel="noopener">GALA Yuzawa</a> (ไป-กลับ)</td><td><span class="chip c-shin">ชินคันเซ็น</span><span class="note-sm">1 ป้าย &mdash; สถานีเปิดเฉพาะฤดูหนาว &middot; รถรับส่งของ GALA เป็นบัส จึงไม่ใช้</span></td><td class="r">3 นาที/เที่ยว</td><td class="r">&yen;480<span class="note-sm">/คน ไป-กลับ</span></td><td class="r">&#3647;773</td></tr>
+
+      <tr class="daysep"><td colspan="5">DAY 05 &middot; 30 ธ.ค. <span class="dd">&mdash; Kiyotsu Gorge</span></td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Echigo-Yuzawa%20Station" target="_blank" rel="noopener">Echigo-Yuzawa</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Kiyotsu%20Gorge%20Tunnel%20of%20Light" target="_blank" rel="noopener">Kiyotsu Gorge</a> (ไป-กลับ)</td><td><span class="chip c-car">เหมารถ</span><span class="note-sm">จัมโบ้แท็กซี่ 1 คัน ~25 กม. &middot; รอระหว่างเดินอุโมงค์ 3 ชม. &middot; เลี่ยงการเดินเท้า 30 นาทีบนหิมะจากป้ายบัส</span></td><td class="r">35 นาที/เที่ยว</td><td class="r">&yen;38,000<span class="note-sm">/คัน (ประมาณ)</span></td><td class="r">&#3647;8,740</td></tr>
+
+      <tr class="daysep"><td colspan="5">DAY 06 &middot; 31 ธ.ค. <span class="dd">&mdash; เมือง Yuzawa &middot; ส่งท้ายปี</span></td></tr>
+      <tr><td class="leg">ในเมือง <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Echigo-Yuzawa%20Station" target="_blank" rel="noopener">Yuzawa</a></td><td><span class="chip c-walk">เดิน</span><span class="note-sm">ที่พักอยู่ในระยะเดินทั้งหมด</span></td><td class="r">&mdash;</td><td class="r free">ฟรี</td><td class="r free">&mdash;</td></tr>
+      <tr><td class="leg">แท็กซี่กลางคืน (เผื่อไว้)</td><td><span class="chip c-car">แท็กซี่</span><span class="note-sm">2 คัน &mdash; กลับที่พักดึกหลังกินโซบะส่งท้ายปี</span></td><td class="r">&mdash;</td><td class="r">&yen;2,000<span class="note-sm">&times; 2 คัน</span></td><td class="r">&#3647;920</td></tr>
+
+      <tr class="daysep"><td colspan="5">DAY 07 &middot; 1 ม.ค. <span class="dd">&mdash; Yuzawa &rarr; Tokyo</span></td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Echigo-Yuzawa%20Station" target="_blank" rel="noopener">Echigo-Yuzawa</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Ueno%20Station%20Tokyo" target="_blank" rel="noopener">Ueno</a></td><td><span class="chip c-shin">ชินคันเซ็น</span><span class="note-sm">Joetsu Shinkansen Toki &mdash; <b>จองที่นั่ง</b> ปีใหม่ขากลับเมืองแน่นมาก</span></td><td class="r">75 นาที</td><td class="r">&yen;6,790<span class="note-sm">/คน</span></td><td class="r">&#3647;10,932</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Ueno%20Station%20Tokyo" target="_blank" rel="noopener">Ueno</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Asakusa%20Station%20Tokyo" target="_blank" rel="noopener">Asakusa</a></td><td><span class="chip c-rail">รถไฟใต้ดิน</span><span class="note-sm">Tokyo Metro Ginza Line</span></td><td class="r">5 นาที</td><td class="r">&yen;180<span class="note-sm">/คน</span></td><td class="r">&#3647;290</td></tr>
+
+      <tr class="daysep"><td colspan="5">DAY 08 &middot; 2 ม.ค. <span class="dd">&mdash; Shinjuku &rarr; Narita</span></td></tr>
+      <tr><td class="leg">ล็อกเกอร์สถานี <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Asakusa%20Station%20Tokyo" target="_blank" rel="noopener">Asakusa</a></td><td><span class="chip c-misc">ฝากของ</span><span class="note-sm">ตู้ใหญ่ 3 ตู้ สำหรับกระเป๋า 7 ใบ</span></td><td class="r">&mdash;</td><td class="r">&yen;700<span class="note-sm">&times; 3 ตู้</span></td><td class="r">&#3647;483</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Asakusa%20Station%20Tokyo" target="_blank" rel="noopener">Asakusa</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku%20Station%20Tokyo" target="_blank" rel="noopener">Shinjuku</a></td><td><span class="chip c-rail">รถไฟ</span><span class="note-sm">Ginza Line &rarr; Kanda &rarr; JR Chuo</span></td><td class="r">35 นาที</td><td class="r">&yen;400<span class="note-sm">/คน</span></td><td class="r">&#3647;644</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku%20Station%20Tokyo" target="_blank" rel="noopener">Shinjuku</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Asakusa%20Station%20Tokyo" target="_blank" rel="noopener">Asakusa</a></td><td><span class="chip c-rail">รถไฟ</span><span class="note-sm">ขากลับมารับกระเป๋า</span></td><td class="r">35 นาที</td><td class="r">&yen;400<span class="note-sm">/คน</span></td><td class="r">&#3647;644</td></tr>
+      <tr><td class="leg"><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Asakusa%20Station%20Tokyo" target="_blank" rel="noopener">Asakusa</a> <span class="arrow">&rarr;</span> <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Narita%20International%20Airport" target="_blank" rel="noopener">สนามบิน Narita</a></td><td><span class="chip c-rail">รถไฟ</span><span class="note-sm">Keisei Access Express &mdash; ตรง</span></td><td class="r">60 นาที</td><td class="r">&yen;1,310<span class="note-sm">/คน</span></td><td class="r">&#3647;2,109</td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="4">รวมค่าเดินทางทั้งทริป &middot; &#3647;8,915 ต่อคน</td><td class="r">&#3647;62,405</td></tr></tfoot>
+  </table></div>
+</div></section>
+
+<!-- ===================== STAY ===================== -->
+<section id="stay"><div class="wrap">
+  <div class="shead">
+    <span class="script">Where We Sleep</span><h2>ค่าที่พัก</h2><span class="sub">7 คืน &middot; 7 คน &middot; กดรูปเพื่อเปิดหน้าจอง</span>
+    <span class="amt">&#3647;<span id="stayHead">49,191</span></span>
+  </div>
+  <div class="strip" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-bed"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-home"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-snow"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-mtn"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-bed"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-home"/></svg></div>
+  <div style="height:22px"></div>
+  <div class="stay">
+    <div class="stay-h">
+      <span class="badge">Stay 01</span><h3 id="n-name">Nikko Park Lodge Tobu Station</h3>
+      <span class="when">26&ndash;28 ธ.ค. &middot; 2 คืน</span>
+      <span class="goal">เป้าหมาย: ศาลเจ้า Toshogu &middot; สถานี Tobu-Nikko</span>
+    </div>
+    <a class="hero" id="n-herolink" href="https://www.booking.com/hotel/jp/nikko-park-lodge-tobu-station.html" target="_blank" rel="noopener">
+      <img id="n-hero" src="img/budget_a_park_lodge_tobu.jpg" alt="Nikko Park Lodge Tobu Station">
+      <span class="pick">เลือกแล้ว</span>
+    </a>
+    <div class="thumbs" id="th-n"></div>
+    <div class="stay-b">
+      
+      <div class="spec">
+        <div><div class="k">ราคารวม 2 คืน</div><div class="v big">&#3647;<span id="n-total">10,164</span></div></div>
+        <div><div class="k">ต่อคน/คืน</div><div class="v">&#3647;<span id="n-ppn">726</span></div></div>
+        <div><div class="k">คะแนน</div><div class="v" id="n-rate">6.9 (729 รีวิว) &middot; ทำเล 9.2</div></div>
+        <div><div class="k">นอนยังไง</div><div class="v" id="n-rooms">เตียง 2 ชั้นในห้องรวม 7 เตียง</div></div>
+        <div><div class="k">ห้องน้ำ</div><div class="v" id="n-bath">รวม</div></div>
+        <div><div class="k">ระยะเดิน</div><div class="v" id="n-dist">150 ม. จาก Tobu-Nikko</div></div>
+      </div>
+      <p class="warn" id="n-note">ข้อควรรู้: นอนห้องโดมิทอรีรวมกับคนอื่น ห้องน้ำรวม &middot; ราคารวมภาษีแล้ว (ลดส่งท้ายปี 20%) &middot; <b>เหลือ 7 เตียงพอดี</b> ถ้าช้าอาจไม่ทัน</p>
+      <div class="btnrow"><a class="btn" id="n-btn" href="https://www.booking.com/hotel/jp/nikko-park-lodge-tobu-station.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="btn ghost" id="n-map" target="_blank" rel="noopener" hidden>📍 แผนที่</a></div>
+      <div class="altlabel">ตัวเลือกสำรองในระดับเดียวกัน</div>
+      <div class="alts" id="n-altSAVE"><div class="alt"><img src="img/budget_a_park_lodge_mountainside.jpg" alt="Nikko Park Lodge Mountain Side">
+          <div class="ab"><div class="an">Nikko Park Lodge Mountain Side</div>
+            <div class="ap">&#3647;11,192 &middot; &#3647;799/คน/คืน</div>
+            <div class="ax">7.7 (651) &middot; ห้องครอบครัว 4 เตียง <b>มีห้องน้ำในตัว</b> + โดม 3 เตียง &middot; ห่างศูนย์กลาง 1.2 กม. &middot; ยกเลิกฟรีถึง 23 ธ.ค.</div>
+            <a href="https://www.booking.com/hotel/jp/nikko-park-lodge-mountain-side.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=Nikko%20Park%20Lodge%20Mountain%20Side" target="_blank" rel="noopener">📍 แผนที่</a></div></div><div class="alt"><img src="img/budget_a_roost_hostel.jpg" alt="Roost Hostel Nikko">
+          <div class="ab"><div class="an">Roost Hostel Nikko</div>
+            <div class="ap">&asymp;&#3647;12,000&ndash;13,000 &middot; &#3647;860&ndash;930/คน/คืน</div>
+            <div class="ax">7.7 (341) &middot; ห้อง 4 คน <b>มีห้องน้ำ+ครัวในตัว</b> + โดม 3 เตียง &middot; เดิน 350 ม. &middot; <b>ราคาบนเว็บยังไม่รวมภาษี</b> &middot; หลายห้องเหลือ 1 ห้อง</div>
+            <a href="https://www.booking.com/hotel/jp/roost-hostel-nikko.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=Roost%20Hostel%20Nikko" target="_blank" rel="noopener">📍 แผนที่</a></div></div></div>
+      <div class="alts" id="n-altCOMF" hidden><div class="alt"><img src="img/nikko_foshi.jpg" alt="FoSHI JR Nikko" loading="lazy">
+          <div class="ab"><div class="an">FoSHI JR Nikko</div>
+            <div class="ap">&#3647;25,941 &middot; &#3647;1,850/คน/คืน</div>
+            <div class="ax">8.8 (11) &middot; บ้านทั้งหลัง 2 ห้องนอน 2 ห้องน้ำ &middot; เดิน 700 ม. จาก JR Nikko &middot; 2 คนนอนโซฟาเบด</div>
+            <a href="https://www.booking.com/hotel/jp/foshi-jr-nikko-11min-7-11-7min.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=FoSHI%20JR%20NIKKO" target="_blank" rel="noopener">📍 แผนที่</a></div></div><div class="alt"><img src="img/budget_a_park_lodge_tobu.jpg" alt="Nikko Park Lodge Tobu Station" loading="lazy">
+          <div class="ab"><div class="an">Nikko Park Lodge Tobu Station</div>
+            <div class="ap">&#3647;10,164 &middot; &#3647;726/คน/คืน</div>
+            <div class="ax"><b style="color:var(--pine)">ตัวเลือกแผนประหยัด</b> &middot; 6.9 (729) &middot; เตียง 2 ชั้นในห้องรวม 7 เตียง &middot; ห้องน้ำรวม &middot; 150 ม. จากสถานี &middot; ถูกกว่า &#3647;16,329</div>
+            <a href="https://www.booking.com/hotel/jp/nikko-park-lodge-tobu-station.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=Nikko%20Park%20Lodge%20Tobu%20Station" target="_blank" rel="noopener">📍 แผนที่</a></div></div></div>
+    </div>
+  </div>
+  <div class="stay">
+    <div class="stay-h">
+      <span class="badge">Stay 02</span><h3 id="y-name">Lodge Santa House</h3>
+      <span class="when">28 ธ.ค. &ndash; 1 ม.ค. &middot; 4 คืน</span>
+      <span class="goal">เป้าหมาย: สถานี Echigo-Yuzawa &middot; GALA &middot; Kiyotsu Gorge</span>
+    </div>
+    <a class="hero" id="y-herolink" href="https://th.airbnb.com/rooms/1794217859846002780" target="_blank" rel="noopener">
+      <img id="y-hero" src="img/budget_b_santa_house.jpg" alt="Lodge Santa House">
+      <span class="pick">เลือกแล้ว</span>
+    </a>
+    <div class="thumbs" id="th-y"></div>
+    <div class="stay-b">
+      <p class="warn" id="y-warn"><b>จุดเดียวที่ทำไม่ได้ตามงบ &#3647;1,000</b> &mdash; ค้นทั้ง Booking (3 รูปแบบการค้น) และ Airbnb แล้ว ปีใหม่ + ไฮซีซั่นสกี ทำให้ถูกสุดของทั้งเมืองคือ &#3647;1,167/คน/คืน <b>เกินงบ &#3647;4,675</b> ส่วนที่เกินนี้ไปประหยัดคืนที่ Nikko กับ Tokyo ชดเชยได้แล้ว</p>
+      <div class="spec">
+        <div><div class="k">ราคารวม 4 คืน</div><div class="v big">&#3647;<span id="y-total">32,675</span></div></div>
+        <div><div class="k">ต่อคน/คืน</div><div class="v">&#3647;<span id="y-ppn">1,167</span></div></div>
+        <div><div class="k">คะแนน</div><div class="v" id="y-rate">ที่พักใหม่ &mdash; ยังไม่มีรีวิว</div></div>
+        <div><div class="k">นอนยังไง</div><div class="v" id="y-rooms">ห้องเสื่อส่วนตัว นอนฟูตง 7 คน</div></div>
+        <div><div class="k">ห้องน้ำ</div><div class="v" id="y-bath">รวม + มีออนเซ็น</div></div>
+        <div><div class="k">ระยะเดิน</div><div class="v" id="y-dist">ยังไม่ระบุระยะถึงสถานี</div></div>
+      </div>
+      <p class="warn" id="y-note">ข้อควรรู้: เป็นลิสติ้งใหม่ <b>ยังไม่มีรีวิวเลย</b> &mdash; ความเสี่ยงอยู่ตรงนี้ &middot; ได้ห้องส่วนตัวไม่ต้องแชร์กับคนอื่น &middot; ห้องน้ำรวมแต่มีออนเซ็นในที่พัก &middot; ยกเลิกฟรี จ่าย &#3647;0 วันนี้ &mdash; จองไว้ก่อนได้ไม่เสียหาย</p>
+      <div class="btnrow"><a class="btn" id="y-btn" href="https://th.airbnb.com/rooms/1794217859846002780" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=Nikko%20Park%20Lodge%20Tobu%20Station" target="_blank" rel="noopener">📍 แผนที่</a><a class="btn ghost" id="y-map" target="_blank" rel="noopener" hidden>📍 แผนที่</a></div>
+      <div class="altlabel">ตัวเลือกสำรองในระดับเดียวกัน</div>
+      <div class="alts" id="y-altSAVE"><div class="alt"><img src="img/budget_b_ekimoto_minshuku.jpg" alt="&#39365;&#26412;&#12499;&#12523;&#27665;&#23487; 3F Ekimoto Minshuku">
+          <div class="ab"><div class="an">&#39365;&#26412;&#12499;&#12523;&#27665;&#23487; 3F Ekimoto Minshuku</div>
+            <div class="ap">&#3647;61,763 &middot; &#3647;2,206/คน/คืน</div>
+            <div class="ax"><b>เดิน 150 ม. จากสถานี &mdash; ใกล้สุดในเมือง</b> &middot; ห้องครอบครัว 2 ห้อง 10 ฟูตง &middot; ห้องน้ำรวม &middot; ไม่คืนเงิน</div>
+            <a href="https://www.booking.com/hotel/jp/yi-ben-birumin-su-3jie.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A7%85%E6%9C%AC%E3%83%93%E3%83%AB%E6%B0%91%E5%AE%BF%20%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2" target="_blank" rel="noopener">📍 แผนที่</a></div></div><div class="alt"><img src="img/budget_b_kiyotsukyo_hostel.jpg" alt="&#28165;&#27941;&#23777;Hostel &#38634;&#12405;&#12427;&#23487;">
+          <div class="ab"><div class="an">&#28165;&#27941;&#23777;Hostel &#38634;&#12405;&#12427;&#23487;</div>
+            <div class="ap">&#3647;45,688 &middot; &#3647;1,632/คน/คืน</div>
+            <div class="ax">8.2 (82) &middot; ห้อง 3 คน &times; 3 &middot; <b>ห่างสถานี 8 กม.</b> ต้องมีรถ &mdash; แต่อยู่ติด Kiyotsu Gorge ที่จะไปวันที่ 5 พอดี &middot; ยกเลิกฟรี</div>
+            <a href="https://www.booking.com/hotel/jp/qing-jin-xia-hostel-xue-hurusu.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B8%85%E6%B4%A5%E5%B3%A1%E3%83%9B%E3%82%B9%E3%83%86%E3%83%AB%20%E9%9B%AA%E3%81%B5%E3%82%8B%E5%AE%BF" target="_blank" rel="noopener">📍 แผนที่</a></div></div></div>
+      <div class="alts" id="y-altCOMF" hidden><div class="alt"><img src="img/yuzawa_yukaku.jpg" alt="&#24736;&#23458;&#23665;&#33624; Yukaku Sanso" loading="lazy">
+          <div class="ab"><div class="an">&#24736;&#23458;&#23665;&#33624; Yukaku Sanso</div>
+            <div class="ap">&#3647;53,451 &middot; &#3647;1,910/คน/คืน</div>
+            <div class="ax">8.7 (56) &middot; ห้องครอบครัว 26 ตร.ม. &middot; ห่างสถานี 7 กม. ฝั่ง Mitsumata/Kagura &middot; ห้องน้ำรวม &middot; ไม่คืนเงิน</div>
+            <a href="https://www.booking.com/hotel/jp/you-ke-shan-zhuang-tang-ze-ting.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%82%A0%E5%AE%A2%E5%B1%B1%E8%8D%98%20%E6%B9%AF%E6%B2%A2" target="_blank" rel="noopener">📍 แผนที่</a></div></div><div class="alt"><img src="img/budget_b_santa_house.jpg" alt="Lodge Santa House" loading="lazy">
+          <div class="ab"><div class="an">Lodge Santa House</div>
+            <div class="ap">&#3647;32,675 &middot; &#3647;1,167/คน/คืน</div>
+            <div class="ax"><b style="color:var(--pine)">ตัวเลือกแผนประหยัด</b> &middot; ที่พักใหม่ ยังไม่มีรีวิว &middot; ห้องเสื่อส่วนตัว นอนฟูตง 7 คน &middot; ห้องน้ำรวม + ออนเซ็น &middot; ยกเลิกฟรี &middot; ถูกกว่า &#3647;66,823</div>
+            <a href="https://th.airbnb.com/rooms/1794217859846002780" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a></div></div></div>
+    </div>
+  </div>
+  <div class="stay">
+    <div class="stay-h">
+      <span class="badge">Stay 03</span><h3 id="t-name">Crystal Skytree &mdash; Family Apartment 201</h3>
+      <span class="when">1&ndash;2 ม.ค. &middot; 1 คืน</span>
+      <span class="goal">เป้าหมาย: วัด Sensoji &middot; Hoppy Street &middot; รถไฟไป Narita</span>
+    </div>
+    <a class="hero" id="t-herolink" href="https://th.airbnb.com/rooms/1685470004191749163" target="_blank" rel="noopener">
+      <img id="t-hero" src="img/budget_c_crystal_skytree.jpg" alt="Crystal Skytree &mdash; Family Apartment 201">
+      <span class="pick">เลือกแล้ว</span>
+    </a>
+    <div class="thumbs" id="th-t"></div>
+    <div class="stay-b">
+      <p class="warn" id="t-warn"><b>ใน Asakusa เองไม่มีที่ไหนต่ำกว่า &#3647;7,000</b> &mdash; ถูกสุดคือ Hostel Wasabi &#3647;7,929 แต่เป็น<b>โดมผู้ชายล้วน</b> กลุ่มผสมใช้ไม่ได้ &middot; Booking แจ้งว่า 72% ของที่พักใน Asakusa จองไม่ได้แล้วสำหรับคืน 1 ม.ค. &middot; จึงขยับมาเขตข้าง ๆ ที่ยังเดินเที่ยว Asakusa ได้สะดวก</p>
+      <div class="spec">
+        <div><div class="k">ราคารวม 1 คืน</div><div class="v big">&#3647;<span id="t-total">6,352</span></div></div>
+        <div><div class="k">ต่อคน/คืน</div><div class="v">&#3647;<span id="t-ppn">907</span></div></div>
+        <div><div class="k">คะแนน</div><div class="v" id="t-rate">5.0 (6 รีวิว)</div></div>
+        <div><div class="k">นอนยังไง</div><div class="v" id="t-rooms">อพาร์ตเมนต์ทั้งยูนิต 7 คน 3 เตียง</div></div>
+        <div><div class="k">ห้องน้ำ</div><div class="v" id="t-bath">ส่วนตัว</div></div>
+        <div><div class="k">ระยะเดิน</div><div class="v" id="t-dist">เขต Sumida &mdash; ติด Asakusa ฝั่ง Skytree</div></div>
+      </div>
+      <p class="warn" id="t-note">ข้อควรรู้: อยู่เขต Sumida ฝั่ง Skytree ติดกับ Asakusa &mdash; แผนวันที่ 7&ndash;8 (Sensoji, Hoppy Street, ขึ้นรถไฟไป Narita) ยังใช้ได้เหมือนเดิม &middot; ห้องน้ำส่วนตัว &middot; ยกเลิกฟรีถึง 31 ธ.ค.</p>
+      <div class="btnrow"><a class="btn" id="t-btn" href="https://th.airbnb.com/rooms/1685470004191749163" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="btn ghost" id="t-map" target="_blank" rel="noopener" hidden>📍 แผนที่</a></div>
+      <div class="altlabel">ตัวเลือกสำรองในระดับเดียวกัน</div>
+      <div class="alts" id="t-altSAVE"><div class="alt"><img src="img/budget_c_yama_akabane.jpg" alt="Yama Hotel Akabane 2F">
+          <div class="ab"><div class="an">Yama Hotel Akabane 2F</div>
+            <div class="ap">&#3647;5,607 &middot; &#3647;801/คน/คืน &mdash; ถูกสุด</div>
+            <div class="ax">4.87 (97) Superhost &middot; บ้านทั้งหลัง 7 คน &middot; ห้องน้ำส่วนตัว &middot; เดิน 8 นาทีถึง JR Akabane &middot; <b>ห่าง Asakusa 25 นาที</b> ต้องแก้แผนวันสุดท้าย</div>
+            <a href="https://th.airbnb.com/rooms/1356531689310832771" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a></div></div><div class="alt"><img src="img/budget_c_sakura_hotel_101.jpg" alt="Sakura Hotel 101">
+          <div class="ab"><div class="an">Sakura Hotel 101</div>
+            <div class="ap">&#3647;5,611 &middot; &#3647;801/คน/คืน</div>
+            <div class="ax">ที่พักใหม่ 1 รีวิว &middot; สตูดิโอทั้งยูนิต 8 คน 4 เตียงคู่ &middot; <b>ห้องน้ำส่วนตัว 2 ห้อง</b> &middot; เดิน 7 นาทีถึง Monzen-nakacho &middot; ห่าง Asakusa 20 นาที</div>
+            <a href="https://th.airbnb.com/rooms/1752560820034402772" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a></div></div></div>
+      <div class="alts" id="t-altCOMF" hidden><div class="alt"><img src="img/tokyo_2.jpg" alt="Hotel Sting" loading="lazy">
+          <div class="ab"><div class="an">Hotel Sting</div>
+            <div class="ap">&#3647;12,860 &middot; &#3647;1,840/คน/คืน</div>
+            <div class="ax">7.9 (544) &middot; ห้อง King &times; 4 &middot; เดิน 500 ม. &middot; ยกเลิกฟรีก่อน 31 ธ.ค. &middot; อาคารเก่าสไตล์ love-hotel</div>
+            <a href="https://www.booking.com/hotel/jp/sting.html" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a><a class="amap" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20Sting%20Asakusa" target="_blank" rel="noopener">📍 แผนที่</a></div></div><div class="alt"><img src="img/budget_c_crystal_skytree.jpg" alt="Crystal Skytree &mdash; Family Apartment 201" loading="lazy">
+          <div class="ab"><div class="an">Crystal Skytree &mdash; Family Apartment 201</div>
+            <div class="ap">&#3647;6,352 &middot; &#3647;907/คน/คืน</div>
+            <div class="ax"><b style="color:var(--pine)">ตัวเลือกแผนประหยัด</b> &middot; 5.0 (6) &middot; อพาร์ตเมนต์ทั้งยูนิต 7 คน &middot; ห้องน้ำส่วนตัว &middot; เขต Sumida ติด Asakusa &middot; ถูกกว่า &#3647;9,808</div>
+            <a href="https://th.airbnb.com/rooms/1685470004191749163" target="_blank" rel="noopener">เปิดหน้าจอง &rarr;</a></div></div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ===================== FOOD ===================== -->
+<section id="food"><div class="wrap">
+  <div class="shead">
+    <span class="script">Food & Drink</span><h2>ค่าอาหาร + เครื่องดื่ม</h2><span class="sub">ร้านเล็ก ราเมง อิซากายะ เบียร์ธรรมดา</span>
+    <span class="amt">&#3647;46,529 &middot; &#3647;6,647/คน</span>
+  </div>
+  <div class="strip" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-cup"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-sun"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-moon"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-cup"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-bag"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-sun"/></svg></div>
+  <div style="height:22px"></div>
+
+  <div class="maphint"><span>📍</span><p>ชื่อสถานที่ที่<b>ขีดเส้นใต้</b> กดเปิด Google Maps ได้เลย &mdash; เปิดในแท็บใหม่ ไม่หลุดจากหน้านี้</p></div>
+  <div class="meals">
+    <div class="meal"><h4>Day 01</h4><div class="md">26 ธ.ค. &middot; Asakusa &middot; Nikko</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; ราเมง/กิวด้ง แถวสถานี Asakusa</span></span><span>&yen;1,000</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-moon"/></svg><span>เย็น &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%86%E3%81%B0%E5%B0%8F%E7%94%BA%20%E6%97%A5%E5%85%89" target="_blank" rel="noopener">Yuba Komachi</a> (ยูบะทอดราดข้าว)</span></span><span>&yen;1,200</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>เบียร์ &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%A5%E5%85%89%20%E3%81%88%E3%82%93%E3%82%84" target="_blank" rel="noopener">Nikko Enya</a> / 7-Eleven</span></span><span>&yen;800</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;3,000 &asymp; &#3647;690</span></div></div>
+
+    <div class="meal"><h4>Day 02</h4><div class="md">27 ธ.ค. &middot; Okunikko</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-sun"/></svg><span>เช้า &mdash; ซูเปอร์ซื้อไว้คืนก่อน</span></span><span>&yen;500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%8F%96%E8%92%B2%E3%83%B6%E6%B5%9C%20%E3%83%AC%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%20%E6%97%A5%E5%85%89" target="_blank" rel="noopener">Shobugahama Rest House</a> / โซบะ</span></span><span>&yen;1,200</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-moon"/></svg><span>เย็น &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%20%E3%81%BC%E3%82%93%E3%81%A6%E3%82%93%20%E6%97%A5%E5%85%89" target="_blank" rel="noopener">Ramen Bonten</a> (ราเมงเกลือ)</span></span><span>&yen;1,000</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>เบียร์ที่พัก</span></span><span>&yen;500</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;3,200 &asymp; &#3647;736</span></div></div>
+
+    <div class="meal"><h4>Day 03</h4><div class="md">28 ธ.ค. &middot; Nikko &middot; Yuzawa</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-sun"/></svg><span>เช้า &mdash; ซูเปอร์</span></span><span>&yen;500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A4%83%E5%AD%90%E3%81%AE%E6%A2%85%E3%81%A1%E3%82%83%E3%82%93%20%E6%97%A5%E5%85%89" target="_blank" rel="noopener">Gyoza no Umechan</a> (เปิด 12:00&ndash;14:30)</span></span><span>&yen;1,000</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-moon"/></svg><span>เย็น &mdash; ราเมงในเมือง <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%20%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3" target="_blank" rel="noopener">Echigo-Yuzawa</a></span></span><span>&yen;1,000</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>อิซากายะใน <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%20%E5%B1%85%E9%85%92%E5%B1%8B" target="_blank" rel="noopener">Echigo-Yuzawa</a> &mdash; เบียร์</span></span><span>&yen;1,000</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;3,500 &asymp; &#3647;805</span></div></div>
+
+    <div class="meal"><h4>Day 04</h4><div class="md">29 ธ.ค. &middot; GALA Yuzawa</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-sun"/></svg><span>เช้า</span></span><span>&yen;500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; ฟู้ดคอร์ต <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=GALA%E6%B9%AF%E6%B2%A2%20Cheers%20%E3%83%95%E3%83%BC%E3%83%89%E3%82%B3%E3%83%BC%E3%83%88" target="_blank" rel="noopener">Cheers</a> บนยอดเขา</span></span><span>&yen;1,200</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-moon"/></svg><span>เย็น &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%20%E5%B1%85%E9%85%92%E5%B1%8B%20%E7%B6%AD%E6%96%B0" target="_blank" rel="noopener">Echigo Ishin</a> / <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E9%87%8E%E5%B1%8B%20%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%20%E3%81%B8%E3%81%8E%E3%81%9D%E3%81%B0" target="_blank" rel="noopener">Nakanoya</a> hegi-soba</span></span><span>&yen;1,300</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B9%AF%E6%B2%A2%E3%81%8B%E3%81%BE%E3%81%8F%E3%82%89%20%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2" target="_blank" rel="noopener">Yuzawa Kamakura</a> &mdash; เบียร์ + กับแกล้ม</span></span><span>&yen;1,800</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;4,800 &asymp; &#3647;1,104</span></div></div>
+
+    <div class="meal"><h4>Day 05</h4><div class="md">30 ธ.ค. &middot; Kiyotsu Gorge</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-sun"/></svg><span>เช้า</span></span><span>&yen;500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; คาเฟ่ <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Periscope%20%E6%B8%85%E6%B4%A5%E5%B3%A1" target="_blank" rel="noopener">Periscope</a> หน้าอุโมงค์</span></span><span>&yen;1,000</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-moon"/></svg><span>เย็น &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%89%9B%E4%B8%BC%20%E3%83%96%E3%83%A9%E3%83%9C%E3%83%BC%20%E6%B9%AF%E6%B2%A2" target="_blank" rel="noopener">Bravo</a> (กิวด้ง) / สึเกะเมง <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=CoCoLo%20%E6%B9%AF%E6%B2%A2%20%E3%81%8C%E3%82%93%E3%81%8E%E3%81%A9%E3%81%8A%E3%82%8A" target="_blank" rel="noopener">CoCoLo</a></span></span><span>&yen;1,200</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>เบียร์ + ของทอด ซูเปอร์ <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%20%E3%81%AE%E3%81%90%E3%81%A1%20%E6%B9%AF%E6%B2%A2" target="_blank" rel="noopener">Noguchi</a></span></span><span>&yen;700</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;3,400 &asymp; &#3647;782</span></div></div>
+
+    <div class="meal"><h4>Day 06</h4><div class="md">31 ธ.ค. &middot; ส่งท้ายปี</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-sun"/></svg><span>เช้า</span></span><span>&yen;500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-bag"/></svg><span><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%9B%AA%E3%82%93%E6%B4%9E%20%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%E9%A7%85" target="_blank" rel="noopener">Yukindo Bomb Onigiri</a> ในสถานี</span></span><span>&yen;500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; ร้านเล็ก <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%20%E6%B8%A9%E6%B3%89%E9%80%9A%E3%82%8A" target="_blank" rel="noopener">Onsen-dori</a></span></span><span>&yen;1,000</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-moon"/></svg><span>Toshikoshi Soba &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E9%87%8E%E5%B1%8B%20%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%20%E3%81%B8%E3%81%8E%E3%81%9D%E3%81%B0" target="_blank" rel="noopener">Nakanoya</a> (ไปก่อน 18:00)</span></span><span>&yen;1,500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>เบียร์ + สาเกส่งท้ายปี</span></span><span>&yen;1,500</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;5,000 &asymp; &#3647;1,150</span></div></div>
+
+    <div class="meal"><h4>Day 07</h4><div class="md">1 ม.ค. &middot; โตเกียว</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-sun"/></svg><span>เช้า</span></span><span>&yen;500</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; ร้านในสถานี (1 ม.ค. ร้านนอกปิดเยอะ)</span></span><span>&yen;1,000</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Hoppy%20Street%20Asakusa" target="_blank" rel="noopener">Hoppy Street</a> &mdash; nikomi &yen;500 / ยากิโทริ &yen;150 ไม้ / เบียร์ &yen;600</span></span><span>&yen;3,000</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;4,500 &asymp; &#3647;1,035</span></div></div>
+
+    <div class="meal"><h4>Day 08</h4><div class="md">2 ม.ค. &middot; Shinjuku &middot; กลับ</div>
+      <ul><li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-sun"/></svg><span>เช้า &mdash; รวมในโรงแรม Vessel Inn</span></span><span>&yen;0</span></li>
+      <li><span><svg class="ic" viewBox="0 0 24 24"><use href="#i-cup"/></svg><span>กลางวัน &mdash; <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Omoide%20Yokocho%20Shinjuku" target="_blank" rel="noopener">Omoide Yokocho</a> (ยากิโทริ + เบียร์)</span></span><span>&yen;1,500</span></li></ul>
+      <div class="mt"><span>รวม/คน</span><span>&yen;1,500 &asymp; &#3647;345</span></div></div>
+  </div>
+</div></section>
+
+<!-- ===================== FEES ===================== -->
+<section id="fee"><div class="wrap">
+  <div class="shead">
+    <span class="script">Attractions</span><h2>ค่าเข้า + กิจกรรม</h2><span class="sub">ทุกจุดที่ต้องจ่ายตอนเข้า</span>
+    <span class="amt">&#3647;17,340 &middot; &#3647;2,477/คน</span>
+  </div>
+  <div class="strip" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-camera"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-mtn"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-snow"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-cup"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-camera"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-home"/></svg></div>
+  <div style="height:22px"></div>
+
+  <div class="maphint"><span>📍</span><p>ชื่อสถานที่ที่<b>ขีดเส้นใต้</b> กดเปิด Google Maps ได้เลย &mdash; เปิดในแท็บใหม่ ไม่หลุดจากหน้านี้</p></div>
+  <div class="attrs">
+    <article class="attr"><div class="ai"><div class="day">Day 01</div><h4><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Shinkyo%20Bridge%20Nikko" target="_blank" rel="noopener">Shinkyo Bridge</a></h4><p class="ad">ขึ้นสะพานแดงศักดิ์สิทธิ์เหนือแม่น้ำไดยะ จุดเปิดทริปคลาสสิกของนิกโก้ หน้าหนาวราวสะพานมีหิมะเกาะ</p><div class="af"><span>ต่อคน</span><b>&yen;300</b><span>รวม 7 คน</span><b>&#3647;483</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d1_shinkyo.jpg" data-cap="สะพานชินเคียว นิกโก้ ในหิมะ (ม.ค. 2021)" data-lbg="a1" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_d1_shinkyo.jpg" alt="สะพานชินเคียว นิกโก้ ในหิมะ (ม.ค. 2021)" loading="lazy"></figure></div></article>
+    <article class="attr"><div class="ai"><div class="day">Day 02</div><h4><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Kegon%20Falls%20Nikko" target="_blank" rel="noopener">Kegon Falls</a></h4><p class="ad">ลิฟต์ลงไปจุดชมวิวใต้หน้าผา ปลายธันวาคมน้ำตกเริ่มเป็นน้ำแข็งบางส่วน</p><div class="af"><span>ต่อคน</span><b>&yen;570</b><span>รวม 7 คน</span><b>&#3647;918</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d2_kegon.jpg" data-cap="น้ำตกเคกง เริ่มจับน้ำแข็ง 30 ธ.ค." data-lbg="a2" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_d2_kegon.jpg" alt="น้ำตกเคกง เริ่มจับน้ำแข็ง 30 ธ.ค." loading="lazy"><span class="galn">3 รูป</span></figure><div class="galrow"><button class="galt" data-lb="img/ph_cover_kegon.jpg" data-cap="น้ำตกเคกง มุมหน้าผาหิมะ" data-lbg="a2" aria-label="น้ำตกเคกง มุมหน้าผาหิมะ"><img src="img/ph_cover_kegon.jpg" alt="น้ำตกเคกง มุมหน้าผาหิมะ" loading="lazy"></button><button class="galt" data-lb="img/ph_d2_irohazaka.jpg" data-cap="ถนนโค้งอิโรฮะซากะ ทางขึ้นไปน้ำตก" data-lbg="a2" aria-label="ถนนโค้งอิโรฮะซากะ ทางขึ้นไปน้ำตก"><img src="img/ph_d2_irohazaka.jpg" alt="ถนนโค้งอิโรฮะซากะ ทางขึ้นไปน้ำตก" loading="lazy"></button></div></div></article>
+    <article class="attr"><div class="ai"><div class="day">Day 02</div><h4>ออนเซ็นสาธารณะ <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A5%A5%E6%97%A5%E5%85%89%E6%B9%AF%E5%85%83%E6%B8%A9%E6%B3%89%20%E6%B8%A9%E6%B3%89%E5%AF%BA" target="_blank" rel="noopener">Yumoto</a></h4><p class="ad">บ่อต้นน้ำพุร้อนกลางหุบเขาหิมะ เปิดเฉพาะ 10:00&ndash;15:00 ต้องเผื่อเวลาให้ทัน</p><div class="af"><span>ต่อคน</span><b>&yen;600</b><span>รวม 7 คน</span><b>&#3647;966</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d2_yumoto.jpg" data-cap="บ่อต้นน้ำพุร้อนยูโมโตะ กลางหุบเขาหิมะ" data-lbg="a3" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_d2_yumoto.jpg" alt="บ่อต้นน้ำพุร้อนยูโมโตะ กลางหุบเขาหิมะ" loading="lazy"><span class="galn">2 รูป</span></figure><div class="galrow"><button class="galt" data-lb="img/ph_d2_yunoko.jpg" data-cap="ทะเลสาบยูโนโกะที่กลายเป็นน้ำแข็ง ข้าง ๆ ออนเซ็น" data-lbg="a3" aria-label="ทะเลสาบยูโนโกะที่กลายเป็นน้ำแข็ง ข้าง ๆ ออนเซ็น"><img src="img/ph_d2_yunoko.jpg" alt="ทะเลสาบยูโนโกะที่กลายเป็นน้ำแข็ง ข้าง ๆ ออนเซ็น" loading="lazy"></button></div></div></article>
+    <article class="attr"><div class="ai"><div class="day">Day 03</div><h4><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Nikko%20Toshogu%20Shrine" target="_blank" rel="noopener">Nikko Toshogu</a></h4><p class="ad">ศาลเจ้ามรดกโลก สุสานโทกุงาวะ อิเอยาสุ ฤดูหนาวเปิด 9:00&ndash;16:00</p><div class="af"><span>ต่อคน</span><b>&yen;1,600</b><span>รวม 7 คน</span><b>&#3647;2,576</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d3_toshogu_winter.jpg" data-cap="ศาลเจ้าโทโชกุ ตะเกียงหินเรียงในหิมะ (ถ่าย 26 ธ.ค. 2022)" data-lbg="a4" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_cover_toshogu.jpg" alt="ศาลเจ้าโทโชกุ อาคารคามิจินโกะ ในหิมะบาง" loading="lazy"><span class="galn">2 รูป</span></figure><div class="galrow"><button class="galt" data-lb="img/ph_d3_toshogu.jpg" data-cap="ประตูโยเมมง ศาลเจ้าโทโชกุ (ภาพฤดูใบไม้ผลิ)" data-lbg="a4" aria-label="ประตูโยเมมง ศาลเจ้าโทโชกุ (ภาพฤดูใบไม้ผลิ)"><img src="img/ph_d3_toshogu.jpg" alt="ประตูโยเมมง ศาลเจ้าโทโชกุ (ภาพฤดูใบไม้ผลิ)" loading="lazy"></button><button class="galt" data-lb="img/ph_cover_toshogu.jpg" data-cap="อาคารคามิจินโกะ ในหิมะบาง" data-lbg="a4" aria-label="อาคารคามิจินโกะ"><img src="img/ph_cover_toshogu.jpg" alt="อาคารคามิจินโกะ" loading="lazy"></button></div></div></article>
+    <article class="attr"><div class="ai"><div class="day">Day 03</div><h4><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%BD%E3%82%93%E3%81%97%E3%82%85%E9%A4%A8%20%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%E9%A9%9B%E5%BA%97" target="_blank" rel="noopener">Ponshukan</a></h4><p class="ad">ตู้ชิมสาเกนีงาตะในสถานี Echigo-Yuzawa จ่ายครั้งเดียวได้ 5 แก้ว</p><div class="af"><span>ต่อคน</span><b>&yen;500</b><span>รวม 7 คน</span><b>&#3647;805</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d6_ponshukan.jpg" data-cap="ตู้ชิมสาเก Ponshukan ในสถานีเอจิโกะ-ยูซาวะ" data-lbg="a5" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_d6_ponshukan.jpg" alt="ตู้ชิมสาเก Ponshukan ในสถานีเอจิโกะ-ยูซาวะ" loading="lazy"></figure></div></article>
+    <article class="attr"><div class="ai"><div class="day">Day 04</div><h4><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=GALA%20Yuzawa%20Snow%20Resort" target="_blank" rel="noopener">GALA Yuzawa</a> &mdash; gondola + Barouche lift</h4><p class="ad">ขึ้นกระเช้าถึงยอดเขาและลิฟต์ต่อขึ้นจุดชมวิว ไม่ต้องเล่นสกีก็ขึ้นได้</p><p class="ad" style="color:var(--gold)">ราคาซีซั่น 2025-26 &middot; ปี 2026-27 ยังไม่ประกาศ &middot; ถ้าเล่นสกี + เช่าชุด &asymp; &yen;10,000</p><div class="af"><span>ต่อคน</span><b>&yen;5,000</b><span>รวม 7 คน</span><b>&#3647;8,050</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d4_gala_gondola.jpg" data-cap="กระเช้า GALA ขณะหิมะตก" data-lbg="a6" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_d4_gala_gondola.jpg" alt="กระเช้า GALA ขณะหิมะตก" loading="lazy"><span class="galn">3 รูป</span></figure><div class="galrow"><button class="galt" data-lb="img/ph_d4_gala_slope.jpg" data-cap="ลานสกี GALA มองลงไปเห็นตัวเมืองยูซาวะ" data-lbg="a6" aria-label="ลานสกี GALA มองลงไปเห็นตัวเมืองยูซาวะ"><img src="img/ph_d4_gala_slope.jpg" alt="ลานสกี GALA มองลงไปเห็นตัวเมืองยูซาวะ" loading="lazy"></button><button class="galt" data-lb="img/ph_cover_gala.jpg" data-cap="GALA Yuzawa มุมกว้าง เห็นลิฟต์ขึ้นเขา" data-lbg="a6" aria-label="GALA Yuzawa มุมกว้าง เห็นลิฟต์ขึ้นเขา"><img src="img/ph_cover_gala.jpg" alt="GALA Yuzawa มุมกว้าง เห็นลิฟต์ขึ้นเขา" loading="lazy"></button></div></div></article>
+    <article class="attr"><div class="ai"><div class="day">Day 05</div><h4><a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=Kiyotsu%20Gorge%20Tunnel%20of%20Light" target="_blank" rel="noopener">Kiyotsu Gorge</a> &mdash; Tunnel of Light</h4><p class="ad">อุโมงค์ศิลปะปลายทางเป็นบ่อน้ำสะท้อนหน้าผา ฤดูหนาวเปิด 9:00&ndash;15:30</p><div class="af"><span>ต่อคน</span><b>&yen;1,000</b><span>รวม 7 คน</span><b>&#3647;1,610</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d5_kiyotsu_gorge.jpg" data-cap="หุบเขาคิโยสึในหิมะหนา" data-lbg="a7" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_d5_kiyotsu_gorge.jpg" alt="หุบเขาคิโยสึในหิมะหนา" loading="lazy"><span class="galn">2 รูป</span></figure><div class="galrow"><button class="galt" data-lb="img/ph_d5_tunnel_light.jpg" data-cap="Tunnel of Light จุดชมวิวปลายอุโมงค์" data-lbg="a7" aria-label="Tunnel of Light จุดชมวิวปลายอุโมงค์"><img src="img/ph_d5_tunnel_light.jpg" alt="Tunnel of Light จุดชมวิวปลายอุโมงค์" loading="lazy"></button></div></div></article>
+    <article class="attr"><div class="ai"><div class="day">Day 04 / 06</div><h4>ออนเซ็นสาธารณะ <a class="ml" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2%20%E5%B1%B1%E3%81%AE%E6%B9%AF" target="_blank" rel="noopener">Yuzawa</a> &times; 2 ครั้ง</h4><p class="ad">แช่ออนเซ็นในเมืองสองรอบ หลังวันลานหิมะและคืนส่งท้ายปี</p><div class="af"><span>ต่อคน</span><b>&yen;1,200</b><span>รวม 7 คน</span><b>&#3647;1,932</b></div></div><div class="gal agal"><figure class="galmain" data-lb="img/ph_d6_yuzawa_night.jpg" data-cap="ถนนออนเซ็นยูซาวะยามพลบ หิมะหนา" data-lbg="a8" tabindex="0" role="button" aria-label="เปิดรูป"><img src="img/ph_d6_yuzawa_night.jpg" alt="ถนนออนเซ็นยูซาวะยามพลบ หิมะหนา" loading="lazy"></figure></div></article>
+  </div>
+  <div class="feetot"><span>รวมค่าเข้าทั้งทริป &middot; &#3647;2,477 ต่อคน</span><b>&yen;10,770 &middot; &#3647;17,340</b></div>
+</div></section>
+
+<!-- ===================== NOTES ===================== -->
+<section id="note"><div class="wrap">
+  <div class="shead"><span class="script">Good to Know</span><h2>หมายเหตุ</h2><span class="sub">อ่านก่อนเอาตัวเลขไปใช้</span></div>
+  <div class="strip" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-bag"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-coin"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-snow"/></svg><span class="dot"></span><svg viewBox="0 0 24 24"><use href="#i-plane"/></svg></div>
+  <div style="height:22px"></div>
+  <div class="notes">
+    <h3>ตัวเลขไหนแน่ ตัวเลขไหนประมาณ</h3>
+    <ul>
+      <li><b>ยืนยันแล้ว</b> &mdash; ค่าโดยสารรถไฟและชินคันเซ็นทุกช่วง, ค่าเข้าสถานที่, ราคาที่พักทั้งสามแห่ง (เห็นบน Booking/Airbnb วันจริง 7 คน เมื่อ 17 ต.ค. 2569)</li>
+      <li><b>ค่าประมาณ</b> &mdash; ค่าเหมาจัมโบ้แท็กซี่ 2 วัน (&yen;60,000 และ &yen;38,000) อิงเรตแท็กซี่นำเที่ยวของ Nikko Kotsu (6 ชม. &yen;44,640 สำหรับรถ 5 ที่นั่ง) บวกส่วนต่างรถ 9 ที่นั่ง <b>ต้องโทรยืนยันราคาจริงก่อนเดินทาง</b> &mdash; Nikko Kotsu 0288-54-1197</li>
+      <li><b>ค่าประมาณ</b> &mdash; ค่าอาหารทุกมื้อ ตั้งจากราคาเมนูจริงของร้านที่ระบุ แต่กินจริงอาจมากน้อยกว่านี้</li>
+      <li><b>ยังไม่ประกาศ</b> &mdash; ราคาบัตร GALA Yuzawa ฤดูกาล 2026-27 (ใช้ราคาปีก่อน) และโซน South ปิดทั้งฤดูกาล</li>
+      <li><b>ยังไม่ยืนยัน</b> &mdash; วัดที่จะไปฟังระฆังโจยะโนะคาเนะคืนส่งท้ายปีที่ Yuzawa ยังหาวัดที่ประกาศเวลาตีระฆังแน่นอนไม่ได้ ในแผนจึงใช้การนับถอยหลังที่ที่พักแทน</li>
+      <li><b>ภาพที่ไม่ใช่ฤดูหนาว</b> &mdash; มี 3 ภาพในชุดนี้ที่ไม่ได้ถ่ายหน้าหนาว (ประตูโยเมมง ศาลเจ้าโทโชกุ, รถไฟ Tobu Spacia X, อาคารผู้โดยสารนาริตะ) ใส่ไว้เพื่อให้เห็นตัวสถานที่ มีกำกับไว้ใต้ภาพทุกภาพแล้ว ภาพอื่นทั้งหมดเป็นภาพฤดูหนาวจริง</li>
+    </ul>
+    <h3>ยังไม่รวมในงบนี้</h3>
+    <ul>
+      <li>ของฝาก ช้อปปิ้ง ถุงโชคดี Fukubukuro วันที่ 2 ม.ค.</li>
+      <li>ค่าเช่าอุปกรณ์สกีที่ GALA (ถ้าเล่นจริง เพิ่ม &asymp; &#3647;1,500/คน)</li>
+      <li>ค่าวีซ่า (ไทยเข้าญี่ปุ่นไม่ต้องขอวีซ่า พำนักไม่เกิน 15 วัน) และค่าทำพาสปอร์ต</li>
+      <li>ค่าโหลดกระเป๋าเพิ่ม ถ้าสายการบินคิดแยก</li>
+    </ul>
+    <h3>สิ่งที่ต้องรีบทำ</h3>
+    <ul>
+      <li><b>จองที่พัก Yuzawa ภายในสัปดาห์นี้</b> &mdash; ปีใหม่เหลือที่ว่างน้อยมาก</li>
+      <li>จองที่นั่ง Tobu Limited Express (วันที่ 1) และ Joetsu Shinkansen ขากลับ (วันที่ 7) &mdash; Tobu เปิดจอง 09:00 ล่วงหน้า 30 วัน</li>
+      <li>โทรจองเหมาจัมโบ้แท็กซี่ Nikko และ Yuzawa พร้อมถามราคายืนยัน</li>
+      <li>เช็กอีกรอบว่า Kiyotsu Gorge เปิดช่วง 30 ธ.ค. (ปกติเปิด แต่หิมะหนักปิดชั่วคราวได้ และปิดยาวกลาง ม.ค.&ndash;ก.พ.)</li>
+    </ul>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  Japan Winter Escape 2026&ndash;2027 &middot; สรุปรายจ่ายสำหรับผู้เดินทาง 7 คน &middot; ข้อมูลราคา ณ 17 ตุลาคม 2569 &middot;
+  อัตราแลกเปลี่ยนอ้างอิง &yen;1 &asymp; &#3647;0.23 &mdash; ตัวเลขทั้งหมดอาจเปลี่ยนตามวันที่จองจริง
+</div></footer>
+
+
+<div id="lb" class="lb" hidden role="dialog" aria-modal="true" aria-label="ดูรูป">
+  <button class="lb-x" id="lbX" aria-label="ปิด">&times;</button>
+  <button class="lb-nav lb-prev" id="lbP" aria-label="รูปก่อนหน้า">&#8249;</button>
+  <figure class="lb-fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav lb-next" id="lbN" aria-label="รูปถัดไป">&#8250;</button>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var P = 7, NIGHTS = 7;
+  var base = { flight:35000, move:8915, food:6647, fee:2477, misc:2000 };
+
+  var PLAN = {
+    SAVE: {
+      stay:49191, stayPP:7027,
+      detail:"Nikko 2 (Park Lodge) \u00b7 Yuzawa 4 (Santa House) \u00b7 Tokyo 1 (Crystal Skytree)",
+      warns:true,
+      n:{ name:"Nikko Park Lodge Tobu Station", img:"img/budget_a_park_lodge_tobu.jpg", thumbs:[],
+          total:"10,164", ppn:"726", rate:"6.9 (729 \u0e23\u0e35\u0e27\u0e34\u0e27) \u00b7 \u0e17\u0e33\u0e40\u0e25 9.2",
+          rooms:"\u0e40\u0e15\u0e35\u0e22\u0e07 2 \u0e0a\u0e31\u0e49\u0e19\u0e43\u0e19\u0e2b\u0e49\u0e2d\u0e07\u0e23\u0e27\u0e21 7 \u0e40\u0e15\u0e35\u0e22\u0e07",
+          bath:"\u0e23\u0e27\u0e21", dist:"150 \u0e21. \u0e08\u0e32\u0e01 Tobu-Nikko",
+          url:"https://www.booking.com/hotel/jp/nikko-park-lodge-tobu-station.html", map:"https://www.google.com/maps/search/?api=1&query=Nikko%20Park%20Lodge%20Tobu%20Station",
+          note:"\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e23\u0e23\u0e39\u0e49: \u0e19\u0e2d\u0e19\u0e2b\u0e49\u0e2d\u0e07\u0e42\u0e14\u0e21\u0e34\u0e17\u0e2d\u0e23\u0e35\u0e48\u0e23\u0e27\u0e21\u0e01\u0e31\u0e1a\u0e04\u0e19\u0e2d\u0e37\u0e48\u0e19 \u0e2b\u0e49\u0e2d\u0e07\u0e19\u0e49\u0e33\u0e23\u0e27\u0e21 \u00b7 \u0e23\u0e32\u0e04\u0e32\u0e23\u0e27\u0e21\u0e20\u0e32\u0e29\u0e35\u0e41\u0e25\u0e49\u0e27 (\u0e25\u0e14\u0e2a\u0e48\u0e07\u0e17\u0e49\u0e32\u0e22\u0e1b\u0e35 20%) \u00b7 <b>\u0e40\u0e2b\u0e25\u0e37\u0e2d 7 \u0e40\u0e15\u0e35\u0e22\u0e07\u0e1e\u0e2d\u0e14\u0e35</b> \u0e16\u0e49\u0e32\u0e0a\u0e49\u0e32\u0e2d\u0e32\u0e08\u0e44\u0e21\u0e48\u0e17\u0e31\u0e19" },
+      y:{ name:"Lodge Santa House", img:"img/budget_b_santa_house.jpg", thumbs:[],
+          total:"32,675", ppn:"1,167", rate:"\u0e17\u0e35\u0e48\u0e1e\u0e31\u0e01\u0e43\u0e2b\u0e21\u0e48 \u2014 \u0e22\u0e31\u0e07\u0e44\u0e21\u0e48\u0e21\u0e35\u0e23\u0e35\u0e27\u0e34\u0e27",
+          rooms:"\u0e2b\u0e49\u0e2d\u0e07\u0e40\u0e2a\u0e37\u0e48\u0e2d\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e31\u0e27 \u0e19\u0e2d\u0e19\u0e1f\u0e39\u0e15\u0e07 7 \u0e04\u0e19",
+          bath:"\u0e23\u0e27\u0e21 + \u0e21\u0e35\u0e2d\u0e2d\u0e19\u0e40\u0e0b\u0e47\u0e19", dist:"\u0e22\u0e31\u0e07\u0e44\u0e21\u0e48\u0e23\u0e30\u0e1a\u0e38\u0e23\u0e30\u0e22\u0e30\u0e16\u0e36\u0e07\u0e2a\u0e16\u0e32\u0e19\u0e35",
+          url:"https://th.airbnb.com/rooms/1794217859846002780", map:"",
+          note:"\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e23\u0e23\u0e39\u0e49: \u0e40\u0e1b\u0e47\u0e19\u0e25\u0e34\u0e2a\u0e15\u0e34\u0e49\u0e07\u0e43\u0e2b\u0e21\u0e48 <b>\u0e22\u0e31\u0e07\u0e44\u0e21\u0e48\u0e21\u0e35\u0e23\u0e35\u0e27\u0e34\u0e27\u0e40\u0e25\u0e22</b> \u2014 \u0e04\u0e27\u0e32\u0e21\u0e40\u0e2a\u0e35\u0e48\u0e22\u0e07\u0e2d\u0e22\u0e39\u0e48\u0e15\u0e23\u0e07\u0e19\u0e35\u0e49 \u00b7 \u0e44\u0e14\u0e49\u0e2b\u0e49\u0e2d\u0e07\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e31\u0e27\u0e44\u0e21\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e41\u0e0a\u0e23\u0e4c\u0e01\u0e31\u0e1a\u0e04\u0e19\u0e2d\u0e37\u0e48\u0e19 \u00b7 \u0e22\u0e01\u0e40\u0e25\u0e34\u0e01\u0e1f\u0e23\u0e35 \u0e08\u0e48\u0e32\u0e22 \u0e3f0 \u0e27\u0e31\u0e19\u0e19\u0e35\u0e49 \u2014 \u0e08\u0e2d\u0e07\u0e44\u0e27\u0e49\u0e01\u0e48\u0e2d\u0e19\u0e44\u0e14\u0e49\u0e44\u0e21\u0e48\u0e40\u0e2a\u0e35\u0e22\u0e2b\u0e32\u0e22" },
+      t:{ name:"Crystal Skytree \u2014 Family Apartment 201", img:"img/budget_c_crystal_skytree.jpg", thumbs:[],
+          total:"6,352", ppn:"907", rate:"5.0 (6 \u0e23\u0e35\u0e27\u0e34\u0e27)",
+          rooms:"\u0e2d\u0e1e\u0e32\u0e23\u0e4c\u0e15\u0e40\u0e21\u0e19\u0e15\u0e4c\u0e17\u0e31\u0e49\u0e07\u0e22\u0e39\u0e19\u0e34\u0e15 7 \u0e04\u0e19 3 \u0e40\u0e15\u0e35\u0e22\u0e07",
+          bath:"\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e31\u0e27", dist:"\u0e40\u0e02\u0e15 Sumida \u2014 \u0e15\u0e34\u0e14 Asakusa \u0e1d\u0e31\u0e48\u0e07 Skytree",
+          url:"https://th.airbnb.com/rooms/1685470004191749163", map:"",
+          note:"\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e23\u0e23\u0e39\u0e49: \u0e2d\u0e22\u0e39\u0e48\u0e40\u0e02\u0e15 Sumida \u0e1d\u0e31\u0e48\u0e07 Skytree \u0e15\u0e34\u0e14\u0e01\u0e31\u0e1a Asakusa \u2014 \u0e41\u0e1c\u0e19\u0e27\u0e31\u0e19\u0e17\u0e35\u0e48 7\u20138 (Sensoji, Hoppy Street, \u0e02\u0e36\u0e49\u0e19\u0e23\u0e16\u0e44\u0e1f\u0e44\u0e1b Narita) \u0e22\u0e31\u0e07\u0e43\u0e0a\u0e49\u0e44\u0e14\u0e49\u0e40\u0e2b\u0e21\u0e37\u0e2d\u0e19\u0e40\u0e14\u0e34\u0e21 \u00b7 \u0e2b\u0e49\u0e2d\u0e07\u0e19\u0e49\u0e33\u0e2a\u0e48\u0e27\u0e19\u0e15\u0e31\u0e27 \u00b7 \u0e22\u0e01\u0e40\u0e25\u0e34\u0e01\u0e1f\u0e23\u0e35\u0e16\u0e36\u0e07 31 \u0e18.\u0e04." }
+    },
+    COMF: {
+      stay:142151, stayPP:20307,
+      detail:"Nikko 2 (Mountain View) \u00b7 Yuzawa 4 (Kaido) \u00b7 Tokyo 1 (Vessel Inn)",
+      warns:false,
+      n:{ name:"Nikko Mountain View", img:"img/nikko_mountain_view.jpg",
+          thumbs:["img/nikko_mountain_view_2.jpg","img/nikko_mountain_view_3.jpg","img/nikko_mountain_view_4.jpg"],
+          total:"26,493", ppn:"1,890", rate:"4.9 \u2605 (193 \u0e23\u0e35\u0e27\u0e34\u0e27) Superhost",
+          rooms:"\u0e1a\u0e49\u0e32\u0e19\u0e17\u0e31\u0e49\u0e07\u0e2b\u0e25\u0e31\u0e07 4 \u0e2b\u0e49\u0e2d\u0e07\u0e19\u0e2d\u0e19 8 \u0e40\u0e15\u0e35\u0e22\u0e07",
+          bath:"1.5 \u0e2b\u0e49\u0e2d\u0e07 \u0e2a\u0e48\u0e27\u0e19\u0e15\u0e31\u0e27", dist:"\u0e40\u0e14\u0e34\u0e19 7 \u0e19\u0e32\u0e17\u0e35 \u00b7 Toshogu 15 \u0e19\u0e32\u0e17\u0e35",
+          url:"https://th.airbnb.com/rooms/52815877", map:"",
+          note:"\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e23\u0e23\u0e39\u0e49: \u0e08\u0e2d\u0e07\u0e43\u0e19\u0e23\u0e30\u0e1a\u0e1a 6 \u0e04\u0e19 \u0e41\u0e25\u0e49\u0e27\u0e41\u0e08\u0e49\u0e07\u0e04\u0e19\u0e17\u0e35\u0e48 7 \u0e40\u0e1e\u0e34\u0e48\u0e21 \u0e40\u0e2b\u0e21\u0e32 \u00a55,500 (\u2248 \u0e3f1,265) \u00b7 \u0e40\u0e07\u0e35\u0e22\u0e1a\u0e2b\u0e25\u0e31\u0e07 21:00 \u00b7 \u0e40\u0e0a\u0e47\u0e01\u0e40\u0e2d\u0e32\u0e15\u0e4c 10:00" },
+      y:{ name:"Kaido Yuzawa Track House", img:"img/yuzawa_kaido.jpg",
+          thumbs:["img/yuzawa_kaido_2.jpg","img/yuzawa_kaido_3.jpg","img/yuzawa_kaido_4.jpg"],
+          total:"99,498", ppn:"3,550", rate:"7.0 (19 \u0e23\u0e35\u0e27\u0e34\u0e27)",
+          rooms:"\u0e2b\u0e49\u0e2d\u0e07 Triple \u00d7 3 \u0e2b\u0e49\u0e2d\u0e07",
+          bath:"\u0e23\u0e27\u0e21", dist:"\u0e40\u0e14\u0e34\u0e19 600 \u0e21. \u0e08\u0e32\u0e01\u0e2a\u0e16\u0e32\u0e19\u0e35",
+          url:"https://www.booking.com/searchresults.html?ss=Kaido+Yuzawa+Track+House", map:"https://www.google.com/maps/search/?api=1&query=Kaido%20Yuzawa%20Track%20House",
+          note:"\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e23\u0e23\u0e39\u0e49: \u0e2b\u0e49\u0e2d\u0e07\u0e19\u0e49\u0e33\u0e23\u0e27\u0e21 \u00b7 \u0e21\u0e35\u0e1a\u0e32\u0e23\u0e4c\u0e43\u0e19\u0e17\u0e35\u0e48\u0e1e\u0e31\u0e01 \u00b7 \u0e22\u0e01\u0e40\u0e25\u0e34\u0e01\u0e1f\u0e23\u0e35\u0e01\u0e48\u0e2d\u0e19 29 \u0e15.\u0e04. \u00b7 \u0e1b\u0e35\u0e43\u0e2b\u0e21\u0e48\u0e17\u0e35\u0e48 Yuzawa \u0e40\u0e15\u0e47\u0e21\u0e40\u0e01\u0e37\u0e2d\u0e1a\u0e2b\u0e21\u0e14 \u0e04\u0e27\u0e23\u0e08\u0e2d\u0e07\u0e20\u0e32\u0e22\u0e43\u0e19\u0e2a\u0e31\u0e1b\u0e14\u0e32\u0e2b\u0e4c\u0e19\u0e35\u0e49" },
+      t:{ name:"Vessel Inn Asakusa Tsukuba Express", img:"img/tokyo_1.jpg",
+          thumbs:["img/tokyo_1_2.jpg","img/tokyo_1_3.jpg","img/tokyo_1_4.jpg"],
+          total:"16,160", ppn:"2,310", rate:"8.4 (478 \u0e23\u0e35\u0e27\u0e34\u0e27) \u00b7 4\u2605",
+          rooms:"Comfort Double \u00d7 4 \u0e2b\u0e49\u0e2d\u0e07",
+          bath:"\u0e43\u0e19\u0e2b\u0e49\u0e2d\u0e07", dist:"Asakusa TX 600 \u0e21.",
+          url:"https://www.booking.com/searchresults.html?ss=Vessel+Inn+Asakusa+Tsukuba+Express", map:"https://www.google.com/maps/search/?api=1&query=Vessel%20Inn%20Asakusa%20Tsukuba%20Express",
+          note:"\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e23\u0e23\u0e39\u0e49: <b>\u0e23\u0e27\u0e21\u0e2d\u0e32\u0e2b\u0e32\u0e23\u0e40\u0e0a\u0e49\u0e32\u0e1a\u0e38\u0e1f\u0e40\u0e1f\u0e15\u0e4c</b> \u0e02\u0e2d\u0e07\u0e27\u0e31\u0e19\u0e01\u0e25\u0e31\u0e1a \u00b7 \u0e22\u0e01\u0e40\u0e25\u0e34\u0e01\u0e1f\u0e23\u0e35\u0e01\u0e48\u0e2d\u0e19 29 \u0e18.\u0e04." }
+    }
+  };
+
+  function fmt(n){ return n.toLocaleString("en-US"); }
+  function set(id,v){ var e=document.getElementById(id); if(e) e.textContent=v; }
+  function html(id,v){ var e=document.getElementById(id); if(e) e.innerHTML=v; }
+  function show(id,on){ var e=document.getElementById(id); if(e) e.hidden=!on; }
+
+  function strip(id, list){
+    var host = document.getElementById(id); if(!host) return;
+    host.textContent = "";
+    if (!list || !list.length){ host.hidden = true; return; }
+    host.hidden = false;
+    list.forEach(function(src){
+      var im = document.createElement("img");
+      im.src = src; im.alt = ""; im.loading = "lazy";
+      im.addEventListener("error", function(){
+        im.remove(); if(!host.children.length) host.hidden = true;
+      });
+      host.appendChild(im);
+    });
+  }
+
+  function city(k, d){
+    set(k+"-name", d.name);
+    set(k+"-total", d.total); set(k+"-ppn", d.ppn);
+    set(k+"-rate", d.rate); set(k+"-rooms", d.rooms);
+    set(k+"-bath", d.bath); set(k+"-dist", d.dist);
+    html(k+"-note", d.note);
+    var img = document.getElementById(k+"-hero");
+    if (img){ img.src = d.img; img.alt = d.name; }
+    var a1 = document.getElementById(k+"-btn"), a2 = document.getElementById(k+"-herolink");
+    if (a1) a1.href = d.url;
+    if (a2) a2.href = d.url;
+    var am = document.getElementById(k+"-map");
+    if (am){ if (d.map){ am.href = d.map; am.hidden = false; } else { am.hidden = true; } }
+    strip("th-"+k, d.thumbs);
+  }
+
+  function apply(key){
+    var pl = PLAN[key]; if(!pl) return;
+    var pp = base.flight + base.move + pl.stayPP + base.food + base.fee + base.misc;
+    var all = pp * P;
+    set("gpp", fmt(pp)); set("gall", fmt(all));
+    set("gnof", fmt(pp - base.flight));
+    set("gday", fmt(Math.round((pp - base.flight)/8)));
+    set("sumAmt", fmt(all)); set("footPP", fmt(pp)); set("footAll", fmt(all));
+    set("stayPP", fmt(pl.stayPP)); set("stayAll", fmt(pl.stay)); set("stayHead", fmt(pl.stay));
+    set("stayDetail", pl.detail); set("stayDetailM", pl.detail);
+
+    ["n","y","t"].forEach(function(k){
+      city(k, pl[k]);
+      show(k+"-altSAVE", key === "SAVE");
+      show(k+"-altCOMF", key === "COMF");
+    });
+    show("y-warn", pl.warns);
+    show("t-warn", pl.warns);
+
+    var parts = [
+      ["b1","p1",base.flight], ["b2","p2",pl.stayPP], ["b3","p3",base.move],
+      ["b4","p4",base.food], ["b5","p5",base.fee], ["b6","p6",base.misc]
+    ];
+    parts.forEach(function(r){
+      var pct = r[2]/pp*100;
+      var bar = document.getElementById(r[0]);
+      if (bar) bar.style.width = pct.toFixed(1) + "%";
+      set(r[1], Math.round(pct) + "%");
+    });
+  }
+
+  var radios = document.querySelectorAll('input[name="sc"]');
+  for (var i=0;i<radios.length;i++){
+    radios[i].addEventListener("change", function(){ apply(this.value); });
+  }
+  apply("SAVE");
+})();
+
+
+(function(){
+  "use strict";
+  var lb=document.getElementById("lb"), img=document.getElementById("lbImg"),
+      cap=document.getElementById("lbCap"), cnt=document.getElementById("lbCount");
+  if(!lb) return;
+  var group=[], at=0;
+
+  function render(){
+    var it=group[at]; if(!it) return;
+    img.src=it.src; img.alt=it.cap||""; cap.textContent=it.cap||"";
+    cnt.textContent=(at+1)+" / "+group.length;
+    document.getElementById("lbP").hidden = group.length<2;
+    document.getElementById("lbN").hidden = group.length<2;
+  }
+  function open(name, src){
+    var nodes=[].slice.call(document.querySelectorAll('[data-lbg="'+name+'"][data-lb]'));
+    var seen={}; group=[];
+    nodes.forEach(function(n){
+      var s=n.getAttribute("data-lb"); if(seen[s]) return; seen[s]=1;
+      group.push({src:s, cap:n.getAttribute("data-cap")||""});
+    });
+    at=0; for(var i=0;i<group.length;i++){ if(group[i].src===src){ at=i; break; } }
+    lb.hidden=false; document.body.classList.add("lb-open"); render();
+    document.getElementById("lbX").focus();
+  }
+  function close(){ lb.hidden=true; document.body.classList.remove("lb-open"); img.src=""; }
+  function step(d){ if(!group.length) return; at=(at+d+group.length)%group.length; render(); }
+
+  document.addEventListener("click", function(e){
+    var t=e.target.closest("[data-lb][data-lbg]");
+    if(t && !t.hasAttribute("hidden")){ e.preventDefault(); open(t.getAttribute("data-lbg"), t.getAttribute("data-lb")); }
+  });
+  document.addEventListener("keydown", function(e){
+    if(lb.hidden){
+      var t=e.target.closest && e.target.closest("[data-lb][data-lbg]");
+      if(t && (e.key==="Enter"||e.key===" ")){ e.preventDefault(); open(t.getAttribute("data-lbg"), t.getAttribute("data-lb")); }
+      return;
+    }
+    if(e.key==="Escape") close();
+    else if(e.key==="ArrowLeft") step(-1);
+    else if(e.key==="ArrowRight") step(1);
+  });
+  document.getElementById("lbX").addEventListener("click", close);
+  document.getElementById("lbP").addEventListener("click", function(e){ e.stopPropagation(); step(-1); });
+  document.getElementById("lbN").addEventListener("click", function(e){ e.stopPropagation(); step(1); });
+  lb.addEventListener("click", function(e){ if(e.target===lb||e.target.classList.contains("lb-fig")) close(); });
+
+  var x0=null,y0=null;
+  lb.addEventListener("touchstart", function(e){ if(e.touches.length===1){ x0=e.touches[0].clientX; y0=e.touches[0].clientY; } }, {passive:true});
+  lb.addEventListener("touchend", function(e){
+    if(x0===null) return;
+    var t=e.changedTouches[0], dx=t.clientX-x0, dy=t.clientY-y0;
+    if(Math.abs(dx)>45 && Math.abs(dx)>Math.abs(dy)) step(dx<0?1:-1);
+    x0=y0=null;
+  }, {passive:true});
+})();
+
+</script>
+
+</body>
+</html>
